@@ -33,24 +33,7 @@ export const HeroSection = () => {
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-dark-bg py-20 md:py-0"
     >
       {/* Hero Background Image */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 opacity-95"
-          style={{
-            backgroundImage: "url('/images/hero-bg.jpg')",
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '70% auto',
-            backgroundPosition: '135% 0%',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-bg/85 via-dark-bg/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/20 via-transparent to-dark-bg/55" />
-      </div>
-
-      {/* Glowing Orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-neon-blue rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-pink rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse" />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-neon-purple rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse" />
+      <div className="absolute inset-0 z-0 hero-bg" />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

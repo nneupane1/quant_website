@@ -171,6 +171,13 @@ body {
   }
 }
 
+.hero-bg {
+  background-image: url('/images/layout_top.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
 @layer utilities {
   .animation-delay-200 {
     animation-delay: 200ms;
