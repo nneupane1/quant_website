@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
 
 export const HeroSection = () => {
   const containerRef = useRef(null);
@@ -33,45 +32,25 @@ export const HeroSection = () => {
       ref={containerRef}
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-dark-bg py-20 md:py-0"
     >
-      {/* Animated Background Grid */}
+      {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-dark-bg to-dark-bg" />
-        <svg
-          className="absolute inset-0 w-full h-full opacity-10"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
+        <div
+          className="absolute inset-0 opacity-95"
+          style={{
+            backgroundImage: "url('/images/hero-bg.jpg')",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '70% auto',
+            backgroundPosition: '135% 0%',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark-bg/85 via-dark-bg/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/20 via-transparent to-dark-bg/55" />
       </div>
 
       {/* Glowing Orbs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-neon-blue rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-pink rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-neon-purple rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse" />
-
-      {/* Hero Logo */}
-      <div className="absolute left-6 sm:left-10 lg:left-16 top-28 sm:top-32 lg:top-36 z-10">
-        <div className="relative flex items-center justify-center">
-          <span className="absolute -inset-10 rounded-full bg-gradient-to-br from-neon-green/25 via-neon-cyan/20 to-neon-pink/25 blur-3xl" />
-          <Image
-            src="/logos/quantfund-logo.jpg"
-            alt="QuantFund AI logo"
-            width={320}
-            height={320}
-            priority
-            className="h-32 w-32 sm:h-40 sm:w-40 lg:h-52 lg:w-52 object-contain mix-blend-screen"
-            style={{
-              filter:
-                'drop-shadow(0 0 24px rgba(78,242,255,0.55)) drop-shadow(0 0 30px rgba(61,255,182,0.4)) drop-shadow(0 0 36px rgba(255,79,216,0.35))',
-            }}
-          />
-        </div>
-      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -81,14 +60,14 @@ export const HeroSection = () => {
           className="inline-flex items-center gap-2 px-4 py-2 mb-6 glass neon-border rounded-full text-sm font-medium"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-          Institutional Trading Stack
+          <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="block mb-2">Quantitative</span>
-          <span className="gradient-text block text-5xl md:text-6xl lg:text-8xl font-black">Trading</span>
-          <span className="block mt-2">Reimagined</span>
+        <h1 className="text-[2.025rem] md:text-[2.7rem] lg:text-[4.05rem] font-bold mb-6 animate-fade-in leading-tight">
+          <span className="block">Quantitative</span>
+          <span className="gradient-text block text-[2.7rem] md:text-[3.375rem] lg:text-[5.4rem] font-black">Trading</span>
+          <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}

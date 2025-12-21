@@ -9,7 +9,7 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="-ml-1 sm:-ml-2 flex items-center hover:opacity-80 transition">
-          <span className="text-lg sm:text-xl font-bold text-gray-100 tracking-wide">
+          <span className="text-xl sm:text-2xl font-bold text-gray-100 tracking-wide">
             QuantFund AI <span className="text-neon-cyan">x</span>{' '}
             <span className="text-neon-pink">Nischal</span>
           </span>
