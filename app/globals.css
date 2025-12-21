@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap');
+
+:root {
+  /* Clean Minimalist Color Scheme - Convex Energy inspired */
+  --bg-primary: #FFFFFF;        /* White background */
+  --bg-secondary: #F8F9FA;      /* Light gray background */
+  --bg-tertiary: #F0F2F5;       /* Even lighter gray */
+  --text-primary: #1A1A1A;      /* Dark text */
+  --text-secondary: #555555;    /* Medium gray */
+  --text-muted: #888888;        /* Light gray */
+  --accent: #FF3A44;            /* Bold red accent */
+  --border: #E5E7EB;            /* Light border */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCCCCC;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+/* Professional Components */
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 0px;
+  padding: 0px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--text-primary);
+}
+
+.button-primary {
+  background: var(--accent);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 2px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button-primary:hover {
+  background: #e63039;
+  transform: none;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  padding: 14px 32px;
+  border: 1px solid var(--text-primary);
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button-secondary:hover {
+  background: var(--bg-secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.6s ease-out;
+}
+
+/* Utility Classes */
+.text-gradient {
+  color: var(--accent);
+}
+
+.divider {
+  border-top: 1px solid var(--border);
+}
+
+/* Typography */
+.uppercase-text {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+

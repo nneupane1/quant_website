@@ -1,0 +1,24 @@
+{
+  "features": [
+    {
+      "name": "ATR Percentile",
+      "description": "Volatility-adjusted entry signal strength"
+    },
+    {
+      "name": "EMA Stacking",
+      "description": "Directional trend confirmation across timeframes"
+    },
+    {
+      "name": "VWAP Distance",
+      "description": "Volume-weighted price positioning"
+    },
+    {
+      "name": "Structure Confidence",
+      "description": "BOS/CHOCH geometry validation"
+    },
+    {
+      "name": "Liquidity Z-Score",
+      "description": "Volume regime classification"
+    }
+  ]
+}

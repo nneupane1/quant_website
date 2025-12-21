@@ -1,0 +1,16 @@
+{
+  "papers": [
+    {
+      "id": 1,
+      "title": "Smart Money Concepts in Modern Markets",
+      "description": "Analysis of institutional order flow patterns, breakout mechanics, and structure retest strategies",
+      "date": "2024-12-01"
+    },
+    {
+      "id": 2,
+      "title": "Machine Learning for Quantitative Trading",
+      "description": "Calibration techniques for deterministic confluence + ML fusion",
+      "date": "2024-11-01"
+    }
+  ]
+}
