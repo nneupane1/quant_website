@@ -8,28 +8,28 @@ export const PerformanceDashboard = () => {
       title: 'Total Return',
       value: '+247.3%',
       subtitle: 'Since Inception',
-      color: 'neon-green',
+      colorClass: 'text-neon-green',
       trend: 'up',
     },
     {
       title: 'Annualized Return',
       value: '34.2%',
       subtitle: '8-Year Average',
-      color: 'neon-cyan',
+      colorClass: 'text-neon-cyan',
       trend: 'up',
     },
     {
       title: 'Volatility',
       value: '18.5%',
       subtitle: 'Annualized',
-      color: 'neon-blue',
+      colorClass: 'text-neon-blue',
       trend: 'down',
     },
     {
       title: 'Sharpe Ratio',
       value: '1.85',
       subtitle: 'Risk-Adjusted Return',
-      color: 'neon-purple',
+      colorClass: 'text-neon-purple',
       trend: 'up',
     },
   ];
@@ -47,7 +47,7 @@ export const PerformanceDashboard = () => {
               className="glass neon-border rounded-xl p-6 hover:border-neon-cyan transition-all"
             >
               <p className="text-gray-400 text-sm mb-2">{metric.title}</p>
-              <p className={`text-3xl font-bold mb-2 text-${metric.color}`}>
+              <p className={`text-3xl font-bold mb-2 ${metric.colorClass}`}>
                 {metric.value}
               </p>
               <p className="text-xs text-gray-500">{metric.subtitle}</p>

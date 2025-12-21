@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export const HeroSection = () => {
   const containerRef = useRef(null);
@@ -52,6 +53,25 @@ export const HeroSection = () => {
       <div className="absolute top-20 left-10 w-72 h-72 bg-neon-blue rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-pink rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-neon-purple rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-pulse" />
+
+      {/* Hero Logo */}
+      <div className="absolute left-6 sm:left-10 lg:left-16 top-28 sm:top-32 lg:top-36 z-10">
+        <div className="relative flex items-center justify-center">
+          <span className="absolute -inset-10 rounded-full bg-gradient-to-br from-neon-green/25 via-neon-cyan/20 to-neon-pink/25 blur-3xl" />
+          <Image
+            src="/logos/quantfund-logo.jpg"
+            alt="QuantFund AI logo"
+            width={320}
+            height={320}
+            priority
+            className="h-32 w-32 sm:h-40 sm:w-40 lg:h-52 lg:w-52 object-contain mix-blend-screen"
+            style={{
+              filter:
+                'drop-shadow(0 0 24px rgba(78,242,255,0.55)) drop-shadow(0 0 30px rgba(61,255,182,0.4)) drop-shadow(0 0 36px rgba(255,79,216,0.35))',
+            }}
+          />
+        </div>
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

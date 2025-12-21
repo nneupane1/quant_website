@@ -28,7 +28,7 @@ export const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative glass neon-border rounded-xl p-6 hover:neon-border-cyan transition-all duration-300 hover:translate-y-[-4px] overflow-hidden"
+              className="group relative glass neon-border rounded-xl p-6 hover:border-neon-cyan transition-all duration-300 hover:translate-y-[-4px] overflow-hidden"
               style={{
                 animation: `fadeIn 0.6s ease-out ${index * 0.1}s both`,
               }}

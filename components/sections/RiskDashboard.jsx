@@ -15,18 +15,18 @@ export const RiskDashboard = () => {
             
             <div className="space-y-6">
               {[
-                { label: 'VaR (95%)', value: '-8.5%', color: 'neon-pink' },
-                { label: 'Max Drawdown', value: '-12.3%', color: 'neon-pink' },
-                { label: 'Exposure', value: '45.2%', color: 'neon-cyan' },
-                { label: 'Correlation', value: '0.32', color: 'neon-blue' },
+                { label: 'VaR (95%)', value: '-8.5%', valueClass: 'text-neon-pink', barClass: 'bg-neon-pink' },
+                { label: 'Max Drawdown', value: '-12.3%', valueClass: 'text-neon-pink', barClass: 'bg-neon-pink' },
+                { label: 'Exposure', value: '45.2%', valueClass: 'text-neon-cyan', barClass: 'bg-neon-cyan' },
+                { label: 'Correlation', value: '0.32', valueClass: 'text-neon-blue', barClass: 'bg-neon-blue' },
               ].map((metric, i) => (
                 <div key={i}>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-gray-300 font-medium">{metric.label}</span>
-                    <span className={`font-bold text-${metric.color}`}>{metric.value}</span>
+                    <span className={`font-bold ${metric.valueClass}`}>{metric.value}</span>
                   </div>
                   <div className="w-full h-2 bg-dark-surface rounded-full overflow-hidden">
-                    <div className={`h-full bg-${metric.color}`} style={{ width: Math.random() * 100 + '%' }} />
+                    <div className={`h-full ${metric.barClass}`} style={{ width: Math.random() * 100 + '%' }} />
                   </div>
                 </div>
               ))}

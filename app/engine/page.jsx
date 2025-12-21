@@ -53,7 +53,7 @@ export default function Engine() {
             ].map((capability, i) => (
               <div
                 key={i}
-                className="glass neon-border rounded-xl p-8 hover:neon-border-cyan transition-all"
+                className="glass neon-border rounded-xl p-8 hover:border-neon-cyan transition-all"
               >
                 <div className="flex items-start gap-4">
                   <span className="text-4xl">{capability.icon}</span>
