@@ -79,21 +79,16 @@ export const HeroSection = () => {
 
         {/* Stats */}
         <div className="pt-8 md:pt-12 border-t border-dark-border">
-          <div className="grid grid-cols-2 md:grid-cols-[auto_auto_auto_auto] gap-4 md:gap-6 text-center md:justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
             {stats.map((stat, i) => (
-              <p
-                key={i}
-                className="text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] font-bold gradient-text neon-glow leading-tight md:whitespace-nowrap tracking-tight"
-              >
-                {stat.value}
-              </p>
-            ))}
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-[auto_auto_auto_auto] gap-4 md:gap-6 text-center md:justify-center mt-2">
-            {stats.map((stat, i) => (
-              <p key={i} className="text-xs md:text-sm text-gray-400 md:whitespace-nowrap">
-                {stat.label}
-              </p>
+              <div key={i} className="flex flex-col items-center gap-1">
+                <p className="text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] font-bold text-neon-blue leading-tight md:whitespace-nowrap tracking-tight">
+                  {stat.value}
+                </p>
+                <p className="text-xs md:text-sm text-neon-blue/70 md:whitespace-nowrap">
+                  {stat.label}
+                </p>
+              </div>
             ))}
           </div>
         </div>
