@@ -30,7 +30,7 @@ export const HeroSection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-16 pb-12 md:pt-20 md:pb-16"
+      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-10 pb-10 md:pt-14 md:pb-12"
     >
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0 hero-bg" />
