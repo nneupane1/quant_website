@@ -4,6 +4,12 @@ import React, { useEffect, useRef } from 'react';
 
 export const HeroSection = () => {
   const containerRef = useRef(null);
+  const stats = [
+    { label: 'Years of Data', value: '8+' },
+    { label: 'Multi-Asset', value: 'Equities, Crypto, Forex' },
+    { label: 'Models', value: 'Entry + Risk + Execution' },
+    { label: 'Dashboards', value: '5 Real-Time' },
+  ];
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -72,20 +78,24 @@ export const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-8 md:pt-12 border-t border-dark-border">
-          {[
-            { label: 'Years of Data', value: '8+' },
-            { label: 'Multi-Asset', value: 'Equities, Crypto, Forex' },
-            { label: 'Models', value: 'Entry + Risk + Execution' },
-            { label: 'Dashboards', value: '5 Real-Time' },
-          ].map((stat, i) => (
-            <div key={i} className="text-center flex flex-col items-center">
-              <div className="min-h-[2.4em] md:min-h-[2.6em] lg:min-h-[2.6em] flex items-center justify-center">
-                <p className="text-xl md:text-2xl lg:text-3xl font-bold text-neon-blue leading-tight">{stat.value}</p>
-              </div>
-              <p className="text-xs md:text-sm text-gray-400 mt-2">{stat.label}</p>
-            </div>
-          ))}
+        <div className="pt-8 md:pt-12 border-t border-dark-border">
+          <div className="grid grid-cols-2 md:grid-cols-[0.9fr_1.4fr_1.6fr_1fr] gap-6 md:gap-8 text-center">
+            {stats.map((stat, i) => (
+              <p
+                key={i}
+                className="text-xl md:text-2xl lg:text-[1.85rem] font-bold text-neon-blue leading-tight md:whitespace-nowrap"
+              >
+                {stat.value}
+              </p>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-[0.9fr_1.4fr_1.6fr_1fr] gap-6 md:gap-8 text-center mt-2">
+            {stats.map((stat, i) => (
+              <p key={i} className="text-xs md:text-sm text-gray-400 md:whitespace-nowrap">
+                {stat.label}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
 
