@@ -79,9 +79,11 @@ export const HeroSection = () => {
             { label: 'Models', value: 'Entry + Risk + Execution' },
             { label: 'Dashboards', value: '5 Real-Time' },
           ].map((stat, i) => (
-            <div key={i} className="text-center">
-              <p className="text-xl md:text-2xl lg:text-3xl font-bold text-neon-blue mb-2">{stat.value}</p>
-              <p className="text-xs md:text-sm text-gray-400">{stat.label}</p>
+            <div key={i} className="text-center flex flex-col items-center">
+              <div className="min-h-[2.4em] md:min-h-[2.6em] lg:min-h-[2.6em] flex items-center justify-center">
+                <p className="text-xl md:text-2xl lg:text-3xl font-bold text-neon-blue leading-tight">{stat.value}</p>
+              </div>
+              <p className="text-xs md:text-sm text-gray-400 mt-2">{stat.label}</p>
             </div>
           ))}
         </div>
