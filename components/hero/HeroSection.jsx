@@ -59,7 +59,7 @@ export const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <button
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 transform hover:scale-105"
@@ -70,6 +70,9 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
+        <p className="script-text text-base sm:text-lg text-neon-cyan/80">
+          Regime shifts don&apos;t warn you, our models do ...
+        </p>
 
         {/* Stats */}
         {/* Stats removed per request */}

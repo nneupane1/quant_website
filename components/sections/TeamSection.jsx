@@ -131,7 +131,9 @@ export const TeamSection = () => {
                     {/* Detailed Experience */}
                     <div>
                       <h4 className="text-lg font-bold text-neon-blue mb-3">Professional Journey</h4>
-                      <p className="text-gray-300 leading-relaxed text-sm">{member.journey}</p>
+                      {member.journey ? (
+                        <p className="text-gray-300 leading-relaxed text-sm">{member.journey}</p>
+                      ) : null}
                       <div className="mt-4 space-y-4">
                         {member.highlights.map((item, idx) => (
                           <div key={idx} className="flex gap-3">
