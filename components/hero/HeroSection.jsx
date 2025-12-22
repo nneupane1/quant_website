@@ -8,7 +8,7 @@ export const HeroSection = () => {
     { label: 'Years of Data', value: '8+' },
     { label: 'Multi-Asset', value: 'Equities, Crypto, Forex' },
     { label: 'Models', value: 'Entry + Risk + Execution' },
-    { label: 'Dashboards', value: '5 Real-Time' },
+    { label: 'Dashboards', value: '15 Real-Time' },
   ];
 
   useEffect(() => {
@@ -83,7 +83,7 @@ export const HeroSection = () => {
             {stats.map((stat, i) => (
               <p
                 key={i}
-                className="text-xl md:text-2xl lg:text-[1.85rem] font-bold text-neon-blue leading-tight md:whitespace-nowrap"
+                className="text-base md:text-xl lg:text-[1.5rem] font-bold text-neon-blue/80 leading-tight md:whitespace-nowrap"
               >
                 {stat.value}
               </p>

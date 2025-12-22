@@ -9,7 +9,8 @@ export const TeamSection = () => {
       role: 'Founder & CEO',
       name: 'Nischal Neupane',
       title: 'AI & Quant Engineering Expert',
-      bio: 'Building institutional-grade trading systems through advanced ML and data engineering',
+      bio:
+        "Nischal's foundation was built in the quantitative sciences across multidisciplinary fields, with formative work in particle physics, gravitational physics, advanced mathematics, computer science, and financial engineering shaping a rigorous understanding of complex systems across scales. This technical base provided the analytical discipline and systems-level perspective that later informed his work across complex, data-intensive environments.",
       expertise: [
         'Machine Learning Engineering',
         'Quantitative Trading',
@@ -17,7 +18,7 @@ export const TeamSection = () => {
         'Edge/Cloud Architecture',
       ],
       background:
-        'Originally from Nepal with academic and professional experiences spanning USA and Germany. Specialized in Big Data and Machine Learning Engineering with strong foundation in Physics, Mathematics, and Financial Engineering. Experienced in algorithmic trading, deep-learning projects, and data-driven solutions across renewable energy, re-insurance, and automotive sectors.',
+        "His academic and professional roles led to the development of high-fidelity machine-learning pipelines for renewable-energy trading systems, catastrophe-risk modeling using remote sensing, and automotive after-sales analytics and vehicle telemetry. In the automotive domain, he contributed to predictive-maintenance systems for powertrain components, integrating on-board real-time health monitoring with off-board cloud aggregation, large-scale data processing, and predictive modeling - domains where noisy data, asymmetric risk, and statistical rigor define the engineering challenge. These capabilities now converge in Nischal's work on intelligent market systems, where he architects platforms that integrate feature stores, liquidity and volatility modeling, deep-learning predictors, generative models, and agentic AI into a unified research and execution framework. His focus extends beyond MLOps-driven predictive accuracy, emphasizing the design of adaptive architectures that learn, generalize, and respond to evolving market structure with deterministic reliability. Each model is engineered as a fully operational system - trained, calibrated, stress-tested, and continuously monitored - reflecting Nischal's commitment to ensuring that AI functions as a controlled, dependable component of the execution pipeline rather than a source of uncontrolled variance.",
       color: 'neon-cyan',
       image: '/images/nischal.jpg', // Update this with your photo path
     },
