@@ -174,8 +174,8 @@ body {
 .hero-bg {
   background-image: url('/images/scifi_layout.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right -6%;
+  background-size: 90%;
+  background-position: right bottom;
 }
 
 @layer utilities {
