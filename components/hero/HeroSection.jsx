@@ -4,12 +4,6 @@ import React, { useEffect, useRef } from 'react';
 
 export const HeroSection = () => {
   const containerRef = useRef(null);
-  const stats = [
-    { label: 'Years of Data', value: '8+' },
-    { label: 'Multi-Asset', value: 'Equities, Crypto, Forex' },
-    { label: 'Models', value: 'Entry + Risk + Execution' },
-    { label: 'Dashboards', value: '15 Real-Time' },
-  ];
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -78,20 +72,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="pt-8 md:pt-12 border-t border-dark-border">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
-            {stats.map((stat, i) => (
-              <div key={i} className="flex flex-col items-center gap-1">
-                <p className="text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] font-bold text-neon-blue leading-tight md:whitespace-nowrap tracking-tight">
-                  {stat.value}
-                </p>
-                <p className="text-xs md:text-sm text-neon-blue/70 md:whitespace-nowrap">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Stats removed per request */}
       </div>
 
       {/* Scroll Indicator - Hidden on mobile */}
