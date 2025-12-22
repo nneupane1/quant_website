@@ -70,7 +70,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-base sm:text-lg text-neon-cyan/80">
+        <p className="script-text text-2xl sm:text-3xl lg:text-4xl font-bold text-neon-pink/80">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 
