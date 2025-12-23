@@ -60,7 +60,7 @@ export default function About() {
                   },
                   {
                     title: 'Risk & Simulation',
-                    description: 'Adaptive floors, VaR allocation, Monte Carlo cones, and HMM regimes for complete risk management',
+                    description: 'Adaptive floors, VaR allocation, Monte Carlo cones, and Hidden Markov Model regimes for complete risk management',
                   },
                   {
                     title: 'Execution',

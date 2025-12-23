@@ -15,6 +15,11 @@ export default function Research() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12">
+            <img
+              src="/images/quant_engineer.png"
+              alt="Quantitative research engineering"
+              className="w-full rounded-2xl mb-8 object-cover"
+            />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="gradient-text">Research Papers</span>
             </h1>

@@ -47,14 +47,14 @@ export const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mt-16 mb-8 animate-fade-in leading-tight">
+        <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-16 mb-8 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
-          <span className="gradient-text block text-[1.35rem] md:text-[1.6875rem] lg:text-[2.7rem] font-black">Trading</span>
+          <span className="gradient-text block text-[1.5rem] md:text-[1.875rem] lg:text-[3rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-6 mb-10">
+        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-16 mb-10">
           <span className="block">
             <span className="text-neon-cyan">•</span>
             <span className="ml-2">Research &amp; Signal Intelligence</span>
@@ -70,7 +70,7 @@ export const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mt-8 mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mt-2 mb-8">
           <button
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 transform hover:scale-105"
@@ -81,7 +81,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-[4.5rem] sm:mt-[5rem] whitespace-nowrap">
+        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-10 sm:mt-12 whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 
