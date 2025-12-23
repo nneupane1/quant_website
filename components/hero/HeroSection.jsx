@@ -40,21 +40,21 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-16 glass neon-border rounded-full text-sm font-medium animate-float-x"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-8 glass neon-border rounded-full text-sm font-medium animate-float-x"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-8 mb-8 animate-fade-in leading-tight">
+        <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-4 mb-8 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
           <span className="gradient-text block text-[1.5rem] md:text-[1.875rem] lg:text-[3rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-8 mb-10">
+        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10">
           <span className="block">
             <span className="text-neon-cyan">•</span>
             <span className="ml-2">Research &amp; Signal Intelligence</span>
@@ -70,7 +70,7 @@ export const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mt-0 mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center -mt-4 mb-8">
           <button
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 transform hover:scale-105"
@@ -81,7 +81,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-6 sm:mt-8 whitespace-nowrap">
+        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-2 sm:mt-4 whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 

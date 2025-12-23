@@ -88,15 +88,15 @@ body {
 @keyframes floatX {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(-40px);
   }
   50% {
-    transform: translateX(14px);
+    transform: translateX(40px);
   }
 }
 
 .animate-float-x {
-  animation: floatX 6s ease-in-out infinite;
+  animation: floatX 3.6s ease-in-out infinite;
 }
 
 @keyframes floatY {
