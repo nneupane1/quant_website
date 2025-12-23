@@ -30,7 +30,7 @@ export const HeroSection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-40 pb-12 md:pt-52 md:pb-16 lg:pt-60 xl:pt-72 2xl:pt-80"
+      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-[clamp(9rem,14vw,24rem)] pb-12 md:pb-16"
     >
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0 hero-bg" />
@@ -40,7 +40,7 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-16 sm:mt-20 lg:mt-24 xl:mt-28 2xl:mt-32 glass neon-border rounded-full text-sm font-medium"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 glass neon-border rounded-full text-sm font-medium"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
