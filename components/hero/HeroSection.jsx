@@ -47,14 +47,14 @@ export const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mb-5 animate-fade-in leading-tight">
+        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mb-8 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
           <span className="gradient-text block text-[1.35rem] md:text-[1.6875rem] lg:text-[2.7rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mb-6">
+        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mb-10">
           <span className="block">
             <span className="text-neon-cyan">•</span>
             <span className="ml-2">Research &amp; Signal Intelligence</span>
@@ -70,7 +70,7 @@ export const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mt-6 mb-8">
           <button
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 transform hover:scale-105"
