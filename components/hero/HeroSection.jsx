@@ -40,21 +40,21 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-12 glass neon-border rounded-full text-sm font-medium"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-24 glass neon-border rounded-full text-sm font-medium"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mb-8 animate-fade-in leading-tight">
+        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mt-16 mb-8 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
           <span className="gradient-text block text-[1.35rem] md:text-[1.6875rem] lg:text-[2.7rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-28 mb-10">
+        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-40 mb-10">
           <span className="block">
             <span className="text-neon-cyan">•</span>
             <span className="ml-2">Research &amp; Signal Intelligence</span>

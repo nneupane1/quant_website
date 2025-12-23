@@ -139,24 +139,23 @@ export const TeamSection = () => {
           ))}
         </div>
 
-        {/* Vision Statement */}
+        {/* Mission Statement */}
         <div className="mt-16 glass neon-border-pink rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl font-bold text-neon-pink mb-6">Mission & Vision</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h3 className="text-2xl font-bold text-neon-pink mb-6">Mission</h3>
+          <div className="grid grid-cols-1 gap-8">
             <div>
               <h4 className="text-lg font-bold text-neon-cyan mb-3">Mission</h4>
-              <p className="text-gray-300 leading-relaxed">
-                Democratize institutional-grade quantitative trading through open-source, production-ready infrastructure. 
-                Enable traders and quants to move from research to live execution without compromising on data integrity, 
-                risk management, or reproducibility.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-neon-cyan mb-3">Vision</h4>
-              <p className="text-gray-300 leading-relaxed">
-                Build the most trusted ML-powered trading platform where every signal is explainable, every backtest is 
-                auditable, and every trade is defensible. A place where quants spend time on research, not infrastructure.
-              </p>
+              <div className="space-y-4 text-gray-300 leading-relaxed">
+                <p>
+                  Our mission is to democratize institutional-grade quantitative trading by delivering open-source, production-ready infrastructure that moves seamlessly from research to live execution without compromising data integrity, risk controls, or reproducibility. QuantFund AI is committed to ethical market participation, designing systems that behave as responsible liquidity providers—stabilizing volatility rather than amplifying it, and aligning execution with market microstructure health rather than predatory behavior.
+                </p>
+                <p>
+                  Inspired by principles of clarity, discipline, and introspective awareness, the platform incorporates a philosophy drawn from meditative practice: decisions must be grounded, unbiased, and free from emotional noise. This ethos extends into our engineering—models are explainable, backtests are auditable, risk states are transparent, and every trade is defensible.
+                </p>
+                <p>
+                  QuantFund AI exists so quants can focus on research, discovery, and edge, supported by an AI architecture that is principled, ethically aligned, and engineered to contribute positively to market ecosystems.
+                </p>
+              </div>
             </div>
           </div>
         </div>
