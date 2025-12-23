@@ -54,12 +54,23 @@ export const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base md:text-lg lg:text-xl font-semibold text-gray-300 max-w-5xl mx-auto mb-6 whitespace-nowrap">
-          Research &amp; Signal Intelligence • Machine Learning Confluence Ranking • Deterministic Risk &amp; Execution Framework • Precision Filtering &amp; Scoring
+        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mb-6">
+          <span className="block">
+            <span className="text-neon-cyan">•</span>
+            <span className="ml-2">Research &amp; Signal Intelligence</span>
+            <span className="mx-3 text-neon-cyan">•</span>
+            <span>Machine Learning Confluence Ranking</span>
+          </span>
+          <span className="block">
+            <span className="text-neon-cyan">•</span>
+            <span className="ml-2">Deterministic Risk &amp; Execution Framework</span>
+            <span className="mx-3 text-neon-cyan">•</span>
+            <span>Precision Filtering &amp; Scoring</span>
+          </span>
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mb-6">
           <button
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 transform hover:scale-105"
@@ -70,7 +81,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-10 sm:mt-12 whitespace-nowrap">
+        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-12 sm:mt-14 whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 
