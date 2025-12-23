@@ -16,8 +16,13 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12">
+            <img
+              src="/images/stars.png"
+              alt="Starfield backdrop"
+              className="w-full max-h-64 rounded-2xl mb-8 object-cover"
+            />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="gradient-text">About QuantFund AI</span>
+              <span className="text-neon-blue">About QuantFund AI</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               A forensic-level quant lab that unifies institutional-grade research, simulation, and live execution.
@@ -28,7 +33,7 @@ export default function About() {
           <div className="space-y-12">
             {/* Vision */}
             <section className="glass neon-border rounded-xl p-8">
-              <h2 className="text-3xl font-bold mb-4 text-neon-cyan">Our Vision</h2>
+              <h2 className="text-3xl font-bold mb-4 text-neon-pink">Our Vision</h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
                   QuantFund AI is designed as a unified computational framework where research, model development, and live execution operate on a shared data and feature lineage. All tick and bar inputs are processed through a zero-latency, streaming transformation graph, incorporating time-aligned resampling, session encoding, volatility-normalized ATR scaling, and SMC-derived structural annotations.
@@ -47,7 +52,7 @@ export default function About() {
 
             {/* Core Pillars */}
             <section>
-              <h2 className="text-3xl font-bold mb-8 text-neon-cyan">Core Pillars</h2>
+              <h2 className="text-3xl font-bold mb-8 text-neon-pink">Core Pillars</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
                   {
@@ -77,7 +82,7 @@ export default function About() {
 
             {/* Technology Stack */}
             <section className="glass neon-border rounded-xl p-8">
-              <h2 className="text-3xl font-bold mb-6 text-neon-cyan">Technology Stack</h2>
+              <h2 className="text-3xl font-bold mb-6 text-neon-pink">Technology Stack</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   'Python',

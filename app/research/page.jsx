@@ -21,7 +21,7 @@ export default function Research() {
               className="w-full rounded-2xl mb-8 object-cover"
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="gradient-text">Research Papers</span>
+              <span className="gradient-text">Research Methodologies</span>
             </h1>
             <p className="text-xl text-gray-300">
               Institutional-grade analysis and quantitative methodologies

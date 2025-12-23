@@ -13,7 +13,7 @@ export default function Engine() {
       
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto min-h-[60vh] flex items-center justify-center">
-          <div className="text-center animate-pulse">
+          <div className="text-center animate-float-y">
             <p className="text-4xl md:text-5xl font-bold text-neon-cyan">Coming Soon!</p>
           </div>
         </div>

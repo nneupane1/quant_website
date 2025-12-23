@@ -85,6 +85,34 @@ body {
   animation: slideInUp 0.6s ease-out;
 }
 
+@keyframes floatX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(14px);
+  }
+}
+
+.animate-float-x {
+  animation: floatX 6s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-y {
+  animation: floatY 5.5s ease-in-out infinite;
+}
+
 @layer components {
   .glass {
     background: rgba(17, 24, 39, 0.6);

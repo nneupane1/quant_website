@@ -55,7 +55,7 @@ export const TeamSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Leadership</span>
+            <span className="text-neon-blue">Leadership</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Driven by deep expertise in quantitative trading, machine learning, and institutional-grade infrastructure
@@ -116,7 +116,7 @@ export const TeamSection = () => {
                   <div className="space-y-6">
                     {/* Main Bio */}
                     <div>
-                      <h4 className="text-lg font-bold text-neon-blue mb-3">Background</h4>
+                      <h4 className="text-lg font-bold text-neon-pink mb-3">Background</h4>
                       <p className="text-gray-300 leading-relaxed">{member.bio}</p>
                     </div>
 
@@ -141,7 +141,7 @@ export const TeamSection = () => {
 
         {/* Mission Statement */}
         <div className="mt-16 glass neon-border-pink rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl font-bold text-neon-pink mb-6">Mission</h3>
+          <h3 className="text-3xl font-bold text-neon-pink mb-6">Mission</h3>
           <div className="grid grid-cols-1 gap-8">
             <div>
               <div className="space-y-4 text-gray-300 leading-relaxed">
