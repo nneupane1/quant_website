@@ -10,15 +10,13 @@ export const TeamSection = () => {
       name: 'Nischal Neupane',
       title: 'AI & Quant Engineering Expert',
       bio:
-        "Nischal is a quantitative systems engineer with a multidisciplinary foundation spanning particle and gravitational physics, advanced mathematics, computer science, and financial engineering. Originally from Nepal, with academic and professional experience across the USA and Germany, he developed a global, systems-level perspective on complex data environments and high-stakes analytical systems. His career has encompassed renewable-energy forecasting, catastrophe-risk modeling through CNN-based remote sensing in the reinsurance sector, and large-scale automotive telemetry and predictive-maintenance frameworks integrating on-board ECUs, edge microcontrollers, and cloud-based intelligence. Across these domains - defined by noisy data, asymmetric risk, and stringent statistical rigor - he has built high-fidelity machine-learning pipelines, real-time diagnostic systems, and large-volume data architectures. These experiences now converge in his work on advanced AI-driven market systems, where feature engineering, deep-learning models, agentic AI, and large-scale data processing are unified into institutional-grade research and execution platforms engineered for adaptive performance and deterministic, risk-adjusted decision-making.",
+        "Nischal is a quantitative systems engineer with a multidisciplinary foundation spanning particle and gravitational physics, advanced mathematics, computer science, and financial engineering. Originally from Nepal, with academic and professional experience across the USA and Germany, he developed a global, systems-level perspective on complex data environments and high-stakes analytical systems. His career has encompassed renewable-energy forecasting, catastrophe-risk modeling through CNN-based remote sensing in the reinsurance sector, and large-scale automotive telemetry and predictive-maintenance frameworks integrating on-board ECUs, edge microcontrollers, and cloud-based intelligence. Across these domains -- defined by noisy data, asymmetric risk, and stringent statistical rigor -- he has built high-fidelity machine-learning pipelines, real-time diagnostic systems, and large-volume data architectures. These experiences now converge in his work on advanced AI-driven market systems, where feature engineering, deep-learning models, agentic AI, and large-scale data processing are unified into institutional-grade research and execution platforms engineered for adaptive performance and deterministic, risk-adjusted decision-making.",
       expertise: [
         'Machine Learning Engineering',
         'Quantitative Trading',
         'Big Data Processing',
         'Edge/Cloud Architecture',
       ],
-      journey:
-        "Nischal's academic and professional roles led to the development of high-fidelity Machine Learning pipelines for renewable-energy trading systems, catastrophe-risk modeling using CNN-based remote sensing project within reinsurance sector, and automotive after-sales analytics and vehicle telemetry. In the automotive domain, he contributed to predictive-maintenance systems for powertrain and engine components, integrating on-board real-time health monitoring deployed on edge microcontrollers and ECUs with off-board cloud aggregation, large-scale data processing and predictive modeling - domains where noisy data, asymmetric risk, and statistical rigor define the engineering challenge.",
       highlights: [
         {
           title: 'Cross-Industry Applied Analytics & Systems Engineering',
@@ -45,12 +43,6 @@ export const TeamSection = () => {
           description:
             'Architects unified trading platforms that integrate liquidity and volatility surface modeling, microstructure-informed feature stores, deep-learning predictors, generative modeling workflows, agentic AI orchestration, and deterministic execution logic - creating systems that operate autonomously, adapt to structural regime shifts, and maintain institutional-grade risk controls.',
         },
-      ],
-      beyond: [
-        'Trained in Indian Classical Bansuri',
-        'Proficient in Tabla, Guitar, and Harmonium',
-        'Passionate about creative writing and poetry',
-        'Practices Sahaja Yoga meditation and serves as a voluntary instructor',
       ],
       color: 'neon-cyan',
       image: '/images/nischal.jpg', // Update this with your photo path
@@ -130,75 +122,16 @@ export const TeamSection = () => {
 
                     {/* Detailed Experience */}
                     <div>
-                      <h4 className="text-lg font-bold text-neon-blue mb-3">Professional Journey</h4>
-                      {member.journey ? (
-                        <p className="text-gray-300 leading-relaxed text-sm">{member.journey}</p>
-                      ) : null}
-                      <div className="mt-4 space-y-4">
+                      <div className="mt-2 space-y-4">
                         {member.highlights.map((item, idx) => (
-                          <div key={idx} className="flex gap-3">
-                            <span className="mt-2 h-2 w-2 rounded-full bg-neon-cyan" />
-                            <div>
-                              <p className="text-sm font-semibold text-neon-cyan">{item.title}</p>
-                              <p className="text-xs text-gray-300 leading-relaxed">{item.description}</p>
-                            </div>
+                          <div key={idx}>
+                            <p className="text-sm font-semibold text-neon-cyan mb-1">{item.title}</p>
+                            <p className="text-xs text-gray-300 leading-relaxed">{item.description}</p>
                           </div>
                         ))}
                       </div>
                     </div>
 
-                    <div>
-                      <h4 className="text-lg font-bold text-neon-blue mb-3">Beyond Engineering</h4>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        {member.beyond.map((item, idx) => (
-                          <div key={idx} className="flex items-start gap-2 text-sm text-gray-300">
-                            <span className="mt-1 h-2 w-2 rounded-full bg-neon-pink" />
-                            <span>{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Key Stats */}
-                    <div className="grid grid-cols-3 gap-4 pt-4 border-t border-dark-border">
-                      <div>
-                        <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Experience</p>
-                        <p className="text-xl font-bold text-neon-cyan">15+</p>
-                        <p className="text-xs text-gray-400">Years</p>
-                      </div>
-                      <div>
-                        <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Markets</p>
-                        <p className="text-xl font-bold text-neon-pink">3+</p>
-                        <p className="text-xs text-gray-400">Continents</p>
-                      </div>
-                      <div>
-                        <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Focus</p>
-                        <p className="text-xl font-bold text-neon-purple">ML-First</p>
-                        <p className="text-xs text-gray-400">Approach</p>
-                      </div>
-                    </div>
-
-                    {/* Core Competencies */}
-                    <div>
-                      <h4 className="text-lg font-bold text-neon-blue mb-3">Core Competencies</h4>
-                      <div className="grid grid-cols-2 gap-3">
-                        {[
-                          'Quantitative Trading Systems',
-                          'Machine Learning Engineering',
-                          'Big Data Architecture',
-                          'Feature Engineering',
-                          'Risk Management',
-                          'Real-time Processing',
-                          'Model Deployment',
-                          'Statistical Analysis',
-                        ].map((competency, idx) => (
-                          <div key={idx} className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-neon-green rounded-full" />
-                            <span className="text-sm text-gray-300">{competency}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
