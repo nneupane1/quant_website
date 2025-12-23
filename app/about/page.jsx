@@ -30,7 +30,7 @@ export default function About() {
             <section className="glass neon-border rounded-xl p-8">
               <h2 className="text-3xl font-bold mb-4 text-neon-cyan">Our Vision</h2>
               <p className="text-gray-300 leading-relaxed">
-                QuantFund AI is designed for desks that demand one coherent workflow from raw tick data through live execution. Every bar that hits the system is resampled, session-tagged, and passed through ATR-aware SMC logic, candle geometry, VWAP/Bollinger curvature, MACD bias, and ML-derived liquidity signals. The identical pipeline feeds the feature store, the backtester, the dashboards, and the live scanner so a "BUY BTC/USDT" alert carries the full forensic context — SMC retest classification, wick dominance, VWAP distance, regime state, and macro guardrail scores.
+                QuantFund AI is designed as a unified computational framework where research, model development, and live execution operate on a shared data and feature lineage. All tick and bar inputs are processed through a zero-latency, streaming transformation graph, incorporating time-aligned resampling, session encoding, volatility-normalized ATR scaling, and SMC-derived structural annotations. The analytical pipeline integrates heterogeneous feature classes: candle-geometry tensors, VWAP/Bollinger curvature metrics, MACD momentum derivatives, liquidity-distance embeddings, regime-state classifiers, and ML-generated microstructure proxies. These features populate both the online feature store and the historical backtest/forward-test engines, ensuring strict equivalence between offline research and online inference. All components &mdash; the backtester, the simulator, the dashboard analytics, and the live scanner &mdash; draw from this identical computational graph, eliminating divergence between research and real-time execution. When the system issues an execution candidate, it includes a fully structured reasoning vector: structural bias probabilities, retest classification, wick-flow dominance, liquidity gradient scores, volatility-regime likelihoods, risk-adjusted expectancy, and macro guardrail evaluations. The result is an institutional-grade, end-to-end ML architecture built for reliability, determinism, and adaptive response in dynamic markets. A platform where AI, market microstructure, and statistical modeling converge into a single reproducible pipeline, and where execution decisions are informed by the same models that shaped the research.
               </p>
             </section>
 
@@ -95,11 +95,33 @@ export default function About() {
             {/* Philosophy */}
             <section className="glass neon-border-pink rounded-xl p-8">
               <h2 className="text-3xl font-bold mb-4 text-neon-pink">Our Philosophy</h2>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                QuantFund AI is built on the principle that <strong>alpha must be engineered, not hoped for</strong>. Every subsystem&mdash;research, simulation, risk, and execution&mdash;operates on a unified mathematical blueprint governed by a single{' '}
+                <span className="px-2 py-1 rounded bg-white/10 font-mono text-sm text-gray-100">ParameterRegistry</span>. This registry acts as the system&apos;s global parameter vector{' '}
+                <span className="px-2 py-1 rounded bg-white/10 font-mono text-sm text-gray-100">&Theta;</span>, defining confluence weights, volatility-regime thresholds, ATR scaling windows, ML blend coefficients, and macro-guardrail constraints. Any update to{' '}
+                <span className="px-2 py-1 rounded bg-white/10 font-mono text-sm text-gray-100">&Theta;</span> propagates instantly across the entire architecture, ensuring perfect alignment between offline research and real-time execution.
+              </p>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Every subsystem is wired through ParameterRegistry, so the same YAML blueprint drives backtests, live scans, dashboards, and automation. This allows quant researchers to retune confluence weights, ML blend factors, or ATR regime windows directly in configuration; the backtester, live scanner, RiskManager, and dashboards immediately inherit the change.
+                In this framework, each component <em>S</em>
+                <sub>i</sub> behaves as a deterministic function
+              </p>
+              <div className="text-center text-2xl md:text-3xl font-semibold text-gray-100 my-6 font-serif italic">
+                <span>
+                  S<sub>i</sub> = f<sub>i</sub>(X, &Theta;),
+                </span>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                where <em>X</em> represents the standardized feature graph. This creates <strong>parameter invariance</strong> across backtests, forward tests, dashboards, and live inference&mdash;eliminating drift, ambiguity, and hidden state divergence. When the system surfaces an execution candidate, it does so with a fully structured reasoning vector grounded in the same parameters that defined the research: structural-bias probabilities, regime likelihoods, liquidity gradients, volatility diagnostics, risk-adjusted expectancy, and macro-guardrail evaluations.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Layered on top of this deterministic core is an <strong>agentic research cycle</strong>. Autonomous routines can recalibrate thresholds, evaluate new feature sets, or adjust ML fusion parameters, with each change instantly reflected across the backtester, live scanner, and risk engine. This continuous feedback loop transforms the architecture into a self-improving system&mdash;an AI that not only executes but learns, audits, and evolves its own decision framework.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-2">The philosophy is simple:</p>
+              <p className="text-gray-100 leading-relaxed font-semibold mb-4">
+                coherence over chaos, determinism over drift, structure over superstition.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                This design ensures reproducibility, fast iteration, and statistically rigorous experiments without touching code, keeping the alpha pipeline deterministic and traceable.
+                Markets may shift without warning, but the system&apos;s foundation remains invariant, transparent, and mathematically traceable. In this environment, uncertainty belongs to the market&mdash;not to the models that trade it.
               </p>
             </section>
           </div>
