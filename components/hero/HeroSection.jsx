@@ -30,7 +30,7 @@ export const HeroSection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-40 pb-12 md:pt-52 md:pb-16 lg:pt-60"
+      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-40 pb-12 md:pt-52 md:pb-16 lg:pt-60 xl:pt-72 2xl:pt-80"
     >
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0 hero-bg" />
@@ -40,7 +40,7 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-16 sm:mt-20 lg:mt-24 glass neon-border rounded-full text-sm font-medium"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-16 sm:mt-20 lg:mt-24 xl:mt-28 2xl:mt-32 glass neon-border rounded-full text-sm font-medium"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
@@ -70,7 +70,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-3xl sm:text-4xl lg:text-5xl font-bold text-neon-pink/80 mt-6 sm:mt-8 whitespace-nowrap">
+        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-6 sm:mt-8 whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 
