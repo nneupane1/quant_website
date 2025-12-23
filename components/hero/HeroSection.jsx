@@ -30,7 +30,7 @@ export const HeroSection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-32 pb-12 md:pt-40 md:pb-16 lg:pt-44"
+      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-40 pb-12 md:pt-52 md:pb-16 lg:pt-60"
     >
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0 hero-bg" />
@@ -47,14 +47,14 @@ export const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mb-4 animate-fade-in leading-tight">
+        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mb-5 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
           <span className="gradient-text block text-[1.35rem] md:text-[1.6875rem] lg:text-[2.7rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-6 leading-relaxed">
           Institutional-grade research, simulation, and live execution stack for multi-asset swing & breakout models. SMC + ML confluence with deterministic risk management.
         </p>
 
@@ -70,7 +70,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-3xl sm:text-4xl lg:text-5xl font-bold text-neon-pink/80 mt-10 sm:mt-12 whitespace-nowrap">
+        <p className="script-text text-3xl sm:text-4xl lg:text-5xl font-bold text-neon-pink/80 mt-6 sm:mt-8 whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 
