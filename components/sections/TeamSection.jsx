@@ -144,7 +144,6 @@ export const TeamSection = () => {
           <h3 className="text-2xl font-bold text-neon-pink mb-6">Mission</h3>
           <div className="grid grid-cols-1 gap-8">
             <div>
-              <h4 className="text-lg font-bold text-neon-cyan mb-3">Mission</h4>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
                   Our mission is to democratize institutional-grade quantitative trading by delivering open-source, production-ready infrastructure that moves seamlessly from research to live execution without compromising data integrity, risk controls, or reproducibility. QuantFund AI is committed to ethical market participation, designing systems that behave as responsible liquidity providers—stabilizing volatility rather than amplifying it, and aligning execution with market microstructure health rather than predatory behavior.
