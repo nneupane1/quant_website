@@ -47,14 +47,14 @@ export const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[2.025rem] md:text-[2.7rem] lg:text-[4.05rem] font-bold mb-6 animate-fade-in leading-tight">
+        <h1 className="text-[1.0125rem] md:text-[1.35rem] lg:text-[2.025rem] font-bold mb-4 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
-          <span className="gradient-text block text-[2.7rem] md:text-[3.375rem] lg:text-[5.4rem] font-black">Trading</span>
+          <span className="gradient-text block text-[1.35rem] md:text-[1.6875rem] lg:text-[2.7rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
           Institutional-grade research, simulation, and live execution stack for multi-asset swing & breakout models. SMC + ML confluence with deterministic risk management.
         </p>
 
