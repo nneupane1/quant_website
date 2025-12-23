@@ -40,7 +40,7 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-4 py-2 mb-6 glass neon-border rounded-full text-sm font-medium"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-12 glass neon-border rounded-full text-sm font-medium"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
