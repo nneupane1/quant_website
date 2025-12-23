@@ -70,17 +70,20 @@ export default function About() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   'Python',
-                  'React',
-                  'Next.js',
+                  'NumPy / Pandas',
+                  'statsmodels',
+                  'FastAPI',
                   'PostgreSQL',
-                  'Redis',
-                  'Streamlit',
-                  'TensorFlow',
-                  'scikit-learn',
+                  'streamlit',
+                  'TensorFlow / scikit-learn',
+                  'MLflow',
+                  'HuggingFace / LLM Tooling',
+                  'Next.js',
+                  'TailwindCSS',
+                  'WebSockets',
                   'Docker',
                   'Kubernetes',
-                  'AWS',
-                  'Airflow',
+                  'Prometheus & Grafana',
                 ].map((tech, i) => (
                   <div
                     key={i}
