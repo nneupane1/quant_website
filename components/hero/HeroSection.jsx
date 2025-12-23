@@ -54,8 +54,10 @@ export const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-6 leading-relaxed">
-          Institutional-grade research, simulation, and live execution stack for multi-asset swing & breakout models. SMC + ML confluence with deterministic risk management.
+        <p className="text-xs md:text-sm text-gray-300 max-w-2xl mx-auto mb-6 leading-relaxed">
+          <span className="block">• Research &amp; Signal Intelligence • Machine Learning Confluence Ranking</span>
+          <span className="block">• Simulation &amp; Stress Testing • Backtest &amp; Forwardtest Engines</span>
+          <span className="block">• Deterministic Risk &amp; Execution Framework • Precision Filtering &amp; Scoring</span>
         </p>
 
         {/* CTA Buttons */}
