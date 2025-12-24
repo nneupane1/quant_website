@@ -20,9 +20,9 @@ export default function Research() {
             <img
               src="/images/quant_engineer.png"
               alt="Quantitative research engineering"
-              className="w-[85%] mx-auto rounded-2xl mb-4 -mt-6 object-contain"
+              className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
             />
-            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-4 text-neon-blue">
+            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-3 text-neon-blue">
               Research Methodologies
             </h1>
             <p className="text-xl text-gray-300">

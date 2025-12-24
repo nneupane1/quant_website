@@ -19,7 +19,7 @@ export default function Insights() {
             <img
               src="/images/insights.png"
               alt="QuantFund AI insights"
-              className="w-[85%] mx-auto rounded-2xl mb-4 -mt-6 object-contain"
+              className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="gradient-text">Insights</span>
