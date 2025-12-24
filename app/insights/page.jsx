@@ -21,7 +21,7 @@ export default function Insights() {
               alt="QuantFund AI insights"
               className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
             />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 mt-6">
               <span className="gradient-text">Insights</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">

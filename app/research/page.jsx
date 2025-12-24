@@ -22,7 +22,7 @@ export default function Research() {
               alt="Quantitative research engineering"
               className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
             />
-            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-3 text-neon-blue">
+            <h1 className="text-[2.15rem] md:text-[2.7rem] font-bold mb-3 text-neon-blue mt-6">
               Research Methodologies
             </h1>
             <p className="text-xl text-gray-300">
