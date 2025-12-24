@@ -16,23 +16,11 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12">
-            <div className="relative mb-8">
-              <img
-                src="/images/stars.png"
-                alt="Starfield backdrop"
-                className="w-full max-h-64 rounded-2xl object-cover"
-              />
-              <img
-                src="/images/heartbeat.png"
-                alt="Heartbeat motif"
-                className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 w-20 sm:w-28 md:w-36 mix-blend-screen opacity-85"
-              />
-              <img
-                src="/images/heartbeat.png"
-                alt="Heartbeat motif"
-                className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-20 sm:w-28 md:w-36 mix-blend-screen opacity-85"
-              />
-            </div>
+            <img
+              src="/images/bear_bull.png"
+              alt="Bull and bear motif"
+              className="w-full max-h-64 rounded-2xl mb-8 object-cover"
+            />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="text-neon-blue">About QuantFund AI</span>
             </h1>

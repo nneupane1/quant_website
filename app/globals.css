@@ -96,7 +96,7 @@ body {
 }
 
 .animate-float-x {
-  animation: floatX 3.6s ease-in-out infinite;
+  animation: floatX 4.3s ease-in-out infinite;
 }
 
 @keyframes floatY {
@@ -153,9 +153,10 @@ body {
     text-shadow: 0 0 18px rgba(78, 242, 255, 0.45), 0 0 38px rgba(255, 79, 216, 0.2);
   }
 
-  .script-text {
-    font-family: 'Dancing Script', 'Merriweather', cursive;
+.script-text {
+    font-family: 'Monotiva Cursiva', 'Monotype Corsiva', 'Dancing Script', 'Merriweather', cursive;
     font-style: italic;
+    font-weight: 700;
     letter-spacing: 0.01em;
   }
 

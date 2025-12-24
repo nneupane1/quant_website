@@ -125,11 +125,22 @@ export const TeamSection = () => {
                       <div className="mt-2 space-y-4">
                         {member.highlights.map((item, idx) => (
                           <div key={idx}>
-                            <p className="text-sm font-semibold text-neon-cyan mb-1">{item.title}</p>
-                            <p className="text-xs text-gray-300 leading-relaxed">{item.description}</p>
+                            <p className="text-base font-semibold text-neon-cyan mb-1">{item.title}</p>
+                            <p className="text-gray-300 leading-relaxed">{item.description}</p>
                           </div>
                         ))}
                       </div>
+                    </div>
+
+                    {/* Beyond Engineering */}
+                    <div>
+                      <h4 className="text-lg font-bold text-neon-pink mb-3">Beyond Engineering</h4>
+                      <ul className="space-y-2 text-gray-300 leading-relaxed">
+                        <li>Trained in Indian Classical Bansuri</li>
+                        <li>Proficient in Tabla, Guitar, and Harmonium</li>
+                        <li>Passionate about creative writing and poetry</li>
+                        <li>Practices Sahaja Yoga meditation and serves as a voluntary instructor</li>
+                      </ul>
                     </div>
 
                   </div>

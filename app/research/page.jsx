@@ -14,15 +14,15 @@ export default function Research() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-12">
+          <div className="mb-12 text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-neon-blue">
+              Research Methodologies
+            </h1>
             <img
               src="/images/quant_engineer.png"
               alt="Quantitative research engineering"
               className="w-full rounded-2xl mb-8 object-cover"
             />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="gradient-text">Research Methodologies</span>
-            </h1>
             <p className="text-xl text-gray-300">
               Institutional-grade analysis and quantitative methodologies
             </p>
