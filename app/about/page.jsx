@@ -54,7 +54,7 @@ export default function About() {
             </section>
 
             {/* Core Pillars */}
-            <section>
+            <section className="glass neon-border rounded-xl p-8">
               <h2 className="text-3xl font-bold mb-8 text-neon-pink">Core Pillars</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
