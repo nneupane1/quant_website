@@ -12,14 +12,14 @@ export default function About() {
     <main className="w-full min-h-screen overflow-x-hidden">
       <Navigation />
       
-      <section className="pt-24 md:pt-28 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-20 md:pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
             <img
               src="/images/bull_bear.png"
               alt="Bull and bear motif"
-              className="w-full rounded-2xl mb-4 -mt-6 object-cover object-top"
+              className="w-full rounded-2xl mb-4 -mt-8 object-cover object-top"
               style={{ clipPath: 'inset(0 0 15% 0)' }}
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">

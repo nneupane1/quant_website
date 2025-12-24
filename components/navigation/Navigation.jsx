@@ -26,6 +26,12 @@ export const Navigation = () => {
           <Link href="/research" className="text-gray-300 hover:text-neon-cyan transition text-sm font-medium tracking-wide">
             Research
           </Link>
+          <Link href="/engine" className="text-gray-300 hover:text-neon-cyan transition text-sm font-medium tracking-wide">
+            Live Trading
+          </Link>
+          <Link href="/insights" className="text-gray-300 hover:text-neon-cyan transition text-sm font-medium tracking-wide">
+            Insights
+          </Link>
           <Link href="/careers" className="text-gray-300 hover:text-neon-cyan transition text-sm font-medium tracking-wide">
             Careers
           </Link>

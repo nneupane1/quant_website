@@ -23,8 +23,8 @@ export default function Engine() {
               <span className="gradient-text">Live Trading Room</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
-              Institutional-grade execution infrastructure with deterministic research parity,
-              full auditability, and disciplined risk controls aligned with market microstructure.
+              A hedge fund level execution stack with deterministic research parity,
+              microstructure-aware routing, and audit-grade telemetry.
             </p>
           </div>
 
@@ -51,6 +51,25 @@ export default function Engine() {
                 <p className="text-gray-300 leading-relaxed">{item.description}</p>
               </div>
             ))}
+          </section>
+
+          <section className="glass neon-border rounded-xl p-8 mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-neon-cyan">Trading Room Capabilities</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                'Live scanner with deterministic confluence scoring and execution readiness checks',
+                'Feature store parity between backtest, forward test, and live inference',
+                'Liquidity-aware routing with pre-trade validation and post-trade reconciliation',
+                'Real-time dashboards for risk, exposure, and performance attribution',
+                'Structured alert vectors with bias probabilities and macro guardrail scores',
+                'Full audit trail exports for research review and compliance workflows',
+              ].map((item, i) => (
+                <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
+                  <span className="text-neon-green">✓</span>
+                  {item}
+                </div>
+              ))}
+            </div>
           </section>
 
           <section className="glass neon-border rounded-xl p-8 mb-16">

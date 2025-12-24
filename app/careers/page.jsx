@@ -33,6 +33,9 @@ export default function Careers() {
             </p>
             <div className="max-w-3xl mx-auto mt-6">
               <div className="glass neon-border-pink rounded-xl px-6 py-4">
+                <p className="text-xs uppercase tracking-[0.2em] text-neon-pink/80 mb-2">
+                  Early Career Priority
+                </p>
                 <p className="text-neon-pink font-semibold leading-relaxed">
                   The first round will prioritize students and fresh graduates who demonstrate genuine market curiosity,
                   evidence of self-driven trading research, and the desire to grow inside a quantitatively driven environment.
