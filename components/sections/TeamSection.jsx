@@ -135,7 +135,7 @@ export const TeamSection = () => {
                     {/* Beyond Engineering */}
                     <div>
                       <h4 className="text-lg font-bold text-neon-pink mb-3">Beyond Engineering</h4>
-                      <ul className="space-y-2 text-gray-300 leading-relaxed">
+                      <ul className="list-disc pl-5 space-y-2 text-gray-300 leading-relaxed">
                         <li>Trained in Indian Classical Bansuri</li>
                         <li>Proficient in Tabla, Guitar, and Harmonium</li>
                         <li>Passionate about creative writing and poetry</li>

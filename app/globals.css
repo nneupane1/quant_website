@@ -96,7 +96,7 @@ body {
 }
 
 .animate-float-x {
-  animation: floatX 5.2s ease-in-out infinite;
+  animation: floatX 6.2s ease-in-out infinite;
 }
 
 @keyframes floatY {

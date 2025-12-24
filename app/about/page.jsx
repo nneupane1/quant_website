@@ -17,9 +17,10 @@ export default function About() {
           {/* Header */}
           <div className="mb-12">
             <img
-              src="/images/bear_bull.png"
+              src="/images/bull_bear.png"
               alt="Bull and bear motif"
-              className="w-full rounded-2xl mb-8 object-contain"
+              className="w-full rounded-2xl mb-6 object-cover object-top"
+              style={{ clipPath: 'inset(0 0 15% 0)' }}
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="text-neon-blue">About QuantFund AI</span>
