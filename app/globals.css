@@ -96,7 +96,7 @@ body {
 }
 
 .animate-float-x {
-  animation: floatX 10.5s ease-in-out infinite;
+  animation: floatX 13.5s ease-in-out infinite;
 }
 
 @keyframes floatY {
@@ -111,6 +111,22 @@ body {
 
 .animate-float-y {
   animation: floatY 5.5s ease-in-out infinite;
+}
+
+@keyframes blobFlicker {
+  0%,
+  100% {
+    opacity: 0.16;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.28;
+    transform: translate3d(18px, -12px, 0) scale(1.05);
+  }
+}
+
+.animate-blob-flicker {
+  animation: blobFlicker 26s ease-in-out infinite;
 }
 
 @layer components {

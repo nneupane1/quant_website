@@ -43,7 +43,11 @@ export const HeroSection = () => {
           className="inline-flex items-center gap-2 px-4 py-2 mb-6 mt-8 glass neon-border rounded-full text-sm font-medium animate-float-x"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-          <span className="font-bold text-white">ALGORITHMIC TRADING STACK</span>
+          <span className="font-bold text-white">
+            <span>ALGORITHMIC</span>
+            <span className="ml-2">TRADING</span>
+            <span className="ml-2">STACK</span>
+          </span>
         </div>
 
         {/* Main Title */}

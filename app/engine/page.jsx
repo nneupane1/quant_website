@@ -1,5 +1,6 @@
 import { Navigation } from '@/components/navigation/Navigation';
 import { Footer } from '@/components/footer/Footer';
+import { AmbientBlobs } from '@/components/shared/AmbientBlobs';
 
 export const metadata = {
   title: 'Trading Engine - QuantFund AI',
@@ -11,13 +12,14 @@ export default function Engine() {
     <main className="w-full min-h-screen overflow-x-hidden">
       <Navigation />
       
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative pt-20 md:pt-24 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <AmbientBlobs />
+        <div className="relative z-10 max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <img
               src="/images/tradingroom.png"
               alt="QuantFund AI live trading room"
-              className="w-full rounded-2xl mb-8 object-contain"
+              className="w-[85%] mx-auto rounded-2xl mb-4 -mt-6 object-contain"
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="gradient-text">Live Trading Room</span>

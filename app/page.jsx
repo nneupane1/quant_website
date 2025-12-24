@@ -8,6 +8,7 @@ import { TeamSection } from '@/components/sections/TeamSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { ContactForm } from '@/components/sections/ContactForm';
 import { Footer } from '@/components/footer/Footer';
+import { AmbientBlobs } from '@/components/shared/AmbientBlobs';
 
 export const metadata = {
   title: 'QuantFund AI - Quantitative Trading Platform',
@@ -20,12 +21,17 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <FeaturesSection />
-      <PerformanceDashboard />
-      <DataVisualization />
-      <RiskDashboard />
-      <TeamSection />
-      <CTASection />
-      <ContactForm />
+      <section className="relative overflow-hidden">
+        <AmbientBlobs />
+        <div className="relative z-10">
+          <PerformanceDashboard />
+          <DataVisualization />
+          <RiskDashboard />
+          <TeamSection />
+          <CTASection />
+          <ContactForm />
+        </div>
+      </section>
       <Footer />
     </main>
   );

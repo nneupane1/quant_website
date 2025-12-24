@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation/Navigation';
 import { Footer } from '@/components/footer/Footer';
 import { TeamSection } from '@/components/sections/TeamSection';
+import { AmbientBlobs } from '@/components/shared/AmbientBlobs';
 
 export const metadata = {
   title: 'About QuantFund AI',
@@ -12,14 +13,15 @@ export default function About() {
     <main className="w-full min-h-screen overflow-x-hidden">
       <Navigation />
       
-      <section className="pt-20 md:pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-16 md:pt-20 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <AmbientBlobs />
+        <div className="relative z-10 max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
             <img
               src="/images/bull_bear.png"
               alt="Bull and bear motif"
-              className="w-full rounded-2xl mb-4 -mt-8 object-cover object-top"
+              className="w-full rounded-2xl mb-2 -mt-6 object-cover object-top"
               style={{ clipPath: 'inset(0 0 15% 0)' }}
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">

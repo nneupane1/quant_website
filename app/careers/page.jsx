@@ -1,5 +1,6 @@
 import { Navigation } from '@/components/navigation/Navigation';
 import { Footer } from '@/components/footer/Footer';
+import { AmbientBlobs } from '@/components/shared/AmbientBlobs';
 
 export const metadata = {
   title: 'Careers - QuantFund AI',
@@ -11,13 +12,14 @@ export default function Careers() {
     <main className="w-full min-h-screen overflow-x-hidden">
       <Navigation />
 
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative pt-20 md:pt-24 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <AmbientBlobs />
+        <div className="relative z-10 max-w-5xl mx-auto">
           <div className="mb-12 text-center">
             <img
               src="/images/career1.png"
               alt="Careers at QuantFund AI"
-              className="w-full rounded-2xl mb-8 object-cover"
+              className="w-[85%] mx-auto rounded-2xl mb-4 -mt-6 object-contain"
             />
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 glass neon-border rounded-full text-sm font-medium animate-float-y">
               <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
@@ -32,11 +34,11 @@ export default function Careers() {
               and market integrity.
             </p>
             <div className="max-w-3xl mx-auto mt-6">
-              <div className="glass neon-border-pink rounded-xl px-6 py-4">
-                <p className="text-xs uppercase tracking-[0.2em] text-neon-pink/80 mb-2">
+              <div className="glass bg-neon-green/10 border border-neon-green/40 shadow-[0_0_22px_rgba(0,255,153,0.25)] rounded-xl px-6 py-4">
+                <p className="text-xs uppercase tracking-[0.2em] text-neon-green/80 mb-2">
                   Early Career Priority
                 </p>
-                <p className="text-neon-pink font-semibold leading-relaxed">
+                <p className="text-neon-green font-semibold leading-relaxed">
                   The first round will prioritize students and fresh graduates who demonstrate genuine market curiosity,
                   evidence of self-driven trading research, and the desire to grow inside a quantitatively driven environment.
                 </p>

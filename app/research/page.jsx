@@ -1,5 +1,6 @@
 import { Navigation } from '@/components/navigation/Navigation';
 import { Footer } from '@/components/footer/Footer';
+import { AmbientBlobs } from '@/components/shared/AmbientBlobs';
 
 export const metadata = {
   title: 'Research - QuantFund AI',
@@ -11,18 +12,19 @@ export default function Research() {
     <main className="w-full min-h-screen overflow-x-hidden">
       <Navigation />
       
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-20 md:pt-24 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <AmbientBlobs />
+        <div className="relative z-10 max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
-            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-6 text-neon-blue">
-              Research Methodologies
-            </h1>
             <img
               src="/images/quant_engineer.png"
               alt="Quantitative research engineering"
-              className="w-full rounded-2xl mb-8 object-cover"
+              className="w-[85%] mx-auto rounded-2xl mb-4 -mt-6 object-contain"
             />
+            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-4 text-neon-blue">
+              Research Methodologies
+            </h1>
             <p className="text-xl text-gray-300">
               Institutional-grade analysis and quantitative methodologies
             </p>
