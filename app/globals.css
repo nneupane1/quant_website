@@ -129,6 +129,31 @@ body {
   animation: blobFlicker 26s ease-in-out infinite;
 }
 
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-140%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(140%);
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+}
+
+.animate-light-sweep {
+  animation: lightSweep 10s ease-in-out infinite;
+}
+
 @layer components {
   .glass {
     background: rgba(17, 24, 39, 0.6);
