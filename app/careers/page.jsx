@@ -15,7 +15,7 @@ export default function Careers() {
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 text-center">
             <img
-              src="/images/career.png"
+              src="/images/career1.png"
               alt="Careers at QuantFund AI"
               className="w-full rounded-2xl mb-8 object-cover"
             />
@@ -31,10 +31,14 @@ export default function Careers() {
               When hiring opens, we will be looking for builders who care about rigor, reliability,
               and market integrity.
             </p>
-            <p className="text-base text-gray-300 leading-relaxed max-w-3xl mx-auto mt-4">
-              The first round will prioritize students and fresh graduates who demonstrate genuine market curiosity,
-              evidence of self-driven trading research, and the desire to grow inside a quantitatively driven environment.
-            </p>
+            <div className="max-w-3xl mx-auto mt-6">
+              <div className="glass neon-border-pink rounded-xl px-6 py-4">
+                <p className="text-neon-pink font-semibold leading-relaxed">
+                  The first round will prioritize students and fresh graduates who demonstrate genuine market curiosity,
+                  evidence of self-driven trading research, and the desire to grow inside a quantitatively driven environment.
+                </p>
+              </div>
+            </div>
           </div>
 
           <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
