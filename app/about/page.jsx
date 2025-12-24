@@ -19,7 +19,7 @@ export default function About() {
             <img
               src="/images/bear_bull.png"
               alt="Bull and bear motif"
-              className="w-full max-h-64 rounded-2xl mb-8 object-cover"
+              className="w-full rounded-2xl mb-8 object-contain"
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="text-neon-blue">About QuantFund AI</span>
