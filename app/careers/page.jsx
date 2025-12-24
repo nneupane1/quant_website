@@ -19,17 +19,21 @@ export default function Careers() {
               alt="Careers at QuantFund AI"
               className="w-full rounded-2xl mb-8 object-cover"
             />
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 glass neon-border rounded-full text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 glass neon-border rounded-full text-sm font-medium animate-float-y">
               <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
               <span className="font-bold text-white">Hiring Opens Soon</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-6">
               <span className="gradient-text">Careers at QuantFund AI</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               We are building an institutional-grade quantitative research and execution platform.
               When hiring opens, we will be looking for builders who care about rigor, reliability,
               and market integrity.
+            </p>
+            <p className="text-base text-gray-300 leading-relaxed max-w-3xl mx-auto mt-4">
+              The first round will prioritize students and fresh graduates who demonstrate genuine market curiosity,
+              evidence of self-driven trading research, and the desire to grow inside a quantitatively driven environment.
             </p>
           </div>
 
@@ -59,15 +63,18 @@ export default function Careers() {
           </section>
 
           <section className="glass neon-border rounded-xl p-8 mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-neon-cyan">Roles We Will Open</h2>
+            <h2 className="text-3xl font-bold mb-4 text-neon-cyan">Future Focus Areas</h2>
+            <p className="text-gray-300 mb-6">
+              These are indicative domains we plan to hire for as the team grows&mdash;exact roles may evolve.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'Quant Researcher (SMC + ML Confluence)',
-                'ML Engineer (Feature Stores, Model Ops)',
-                'Data Engineer (Streaming + Backtest Pipelines)',
-                'Systems Engineer (Low-Latency Execution)',
-                'Frontend Engineer (Research Dashboards)',
-                'Risk Engineer (Regime & Stress Frameworks)',
+                'Quant Research (SMC + ML Confluence)',
+                'ML Engineering (Feature Stores, Model Ops)',
+                'Data Engineering (Streaming + Backtest Pipelines)',
+                'Systems Engineering (Low-Latency Execution)',
+                'Frontend (Research Dashboards)',
+                'Risk Engineering (Regime & Stress Frameworks)',
               ].map((role, i) => (
                 <div
                   key={i}

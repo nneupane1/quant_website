@@ -19,11 +19,11 @@ export default function About() {
             <img
               src="/images/bull_bear.png"
               alt="Bull and bear motif"
-              className="w-full rounded-2xl mb-6 object-cover object-top"
+              className="w-full rounded-2xl mb-2 object-cover object-top"
               style={{ clipPath: 'inset(0 0 15% 0)' }}
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="text-neon-blue">About QuantFund AI</span>
+              <span className="text-neon-blue text-[2.55rem] md:text-[3.2rem] block -mt-2">About QuantFund AI</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               A forensic-level quant lab that unifies institutional-grade research, simulation, and live execution.

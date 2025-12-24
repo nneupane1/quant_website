@@ -15,7 +15,7 @@ export default function Research() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-neon-blue">
+            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-6 text-neon-blue">
               Research Methodologies
             </h1>
             <img
