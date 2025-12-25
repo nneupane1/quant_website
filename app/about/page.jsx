@@ -41,8 +41,8 @@ export default function About() {
           {/* Main Content */}
           <div className="space-y-12">
             {/* Vision */}
-            <section className="group relative glass neon-border rounded-xl p-8 transition-all duration-300 hover:translate-y-[-4px] overflow-hidden">
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-blue/0 to-neon-pink/0 transition-all duration-300 group-hover:from-neon-blue/10 group-hover:to-neon-pink/8" />
+            <section className="group relative glass neon-border rounded-xl p-8 hover:border-neon-cyan transition-all duration-300 hover:translate-y-[-4px] overflow-hidden">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-blue/0 to-neon-pink/0 transition-all duration-300 group-hover:from-neon-blue/10 group-hover:to-neon-pink/5" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-4 text-neon-pink">Our Vision</h2>
                 <div className="space-y-4 text-gray-300 leading-relaxed">
