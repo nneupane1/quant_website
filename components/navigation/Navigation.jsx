@@ -1,11 +1,32 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+const STORAGE_KEY = 'quantfund_visit_count';
 
 export const Navigation = () => {
+  const [visitCount, setVisitCount] = useState(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const current = Number.parseInt(window.localStorage.getItem(STORAGE_KEY) || '0', 10);
+      const next = Number.isFinite(current) ? current + 1 : 1;
+      window.localStorage.setItem(STORAGE_KEY, String(next));
+      setVisitCount(next);
+    } catch {
+      setVisitCount(1);
+    }
+  }, []);
+
   return (
     <nav className="relative sticky top-0 z-40 bg-gradient-to-r from-[#05060a] via-[#0b0f14] to-[#05060a] border-b border-dark-border backdrop-blur overflow-visible shadow-[0_20px_60px_rgba(0,212,255,0.12)]">
+      <div className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2">
+        <span className="text-[9px] sm:text-[10px] text-neon-cyan/80 tracking-[0.18em] uppercase">
+          {visitCount ?? '—'} Visits
+        </span>
+      </div>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="-ml-1 sm:-ml-2 flex items-center hover:opacity-80 transition">

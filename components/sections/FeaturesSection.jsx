@@ -1,25 +1,7 @@
 'use client';
-
-import { useEffect, useState } from 'react';
 import { features } from '@/constants/siteMetadata';
 
-const STORAGE_KEY = 'quantfund_visit_count';
-
 export const FeaturesSection = () => {
-  const [visitCount, setVisitCount] = useState(null);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    try {
-      const current = Number.parseInt(window.localStorage.getItem(STORAGE_KEY) || '0', 10);
-      const next = Number.isFinite(current) ? current + 1 : 1;
-      window.localStorage.setItem(STORAGE_KEY, String(next));
-      setVisitCount(next);
-    } catch {
-      setVisitCount(1);
-    }
-  }, []);
-
   return (
     <section id="features" className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background */}
@@ -31,13 +13,6 @@ export const FeaturesSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-8 -mt-16">
-            <div className="inline-flex items-center rounded-full border border-neon-cyan/60 bg-neon-blue/10 px-4 py-2 shadow-[0_10px_24px_rgba(0,255,255,0.18)]">
-              <span className="text-xs sm:text-sm font-semibold text-neon-cyan">
-                {visitCount ?? '—'} Visits
-              </span>
-            </div>
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="block mb-2">Institutional</span>
             <span className="gradient-text text-5xl md:text-6xl">Capabilities</span>
