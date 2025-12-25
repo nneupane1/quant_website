@@ -31,7 +31,7 @@ export const FeaturesSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 -mt-16">
             <div className="inline-flex items-center rounded-full border border-neon-cyan/60 bg-neon-blue/10 px-4 py-2 shadow-[0_10px_24px_rgba(0,255,255,0.18)]">
               <span className="text-xs sm:text-sm font-semibold text-neon-cyan">
                 {visitCount ?? '—'} Visits
