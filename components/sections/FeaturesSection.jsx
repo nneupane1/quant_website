@@ -1,6 +1,7 @@
 'use client';
 
 import { features } from '@/constants/siteMetadata';
+import { VisitCounter } from '@/components/sections/VisitCounter';
 
 export const FeaturesSection = () => {
   return (
@@ -14,6 +15,9 @@ export const FeaturesSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
+          <div className="flex justify-center mb-6">
+            <VisitCounter />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="block mb-2">Institutional</span>
             <span className="gradient-text text-5xl md:text-6xl">Capabilities</span>

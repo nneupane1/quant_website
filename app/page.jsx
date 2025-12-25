@@ -2,7 +2,6 @@ import { Navigation } from '@/components/navigation/Navigation';
 import { HeroSection } from '@/components/hero/HeroSection';
 import { FeaturesSection } from '@/components/sections/FeaturesSection';
 import { PerformanceDashboard } from '@/components/sections/PerformanceDashboard';
-import { VisitCounter } from '@/components/sections/VisitCounter';
 import { DataVisualization } from '@/components/sections/DataVisualization';
 import { RiskDashboard } from '@/components/sections/RiskDashboard';
 import { TeamSection } from '@/components/sections/TeamSection';
@@ -26,7 +25,6 @@ export default function Home() {
         <AmbientBlobs />
         <div className="relative z-10">
           <PerformanceDashboard />
-          <VisitCounter />
           <DataVisualization />
           <RiskDashboard />
           <TeamSection />

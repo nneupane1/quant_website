@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const STORAGE_KEY = 'quantfund_visit_count';
 
@@ -20,18 +20,13 @@ export const VisitCounter = () => {
   }, []);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="glass neon-border rounded-2xl px-8 py-10 text-center">
-          <p className="text-xs uppercase tracking-[0.3em] text-neon-cyan/70 mb-3">Website Visits</p>
-          <p className="text-5xl md:text-6xl font-bold text-neon-blue">
-            {count ?? '—'}
-          </p>
-          <p className="text-gray-300 mt-4">
-            Updates on every visit from this browser.
-          </p>
-        </div>
-      </div>
-    </section>
+    <div className="inline-flex items-center gap-3 rounded-full border border-neon-cyan/30 bg-white/5 px-6 py-3 shadow-[0_12px_30px_rgba(0,255,255,0.12)]">
+      <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.32em] text-neon-cyan/70">
+        Website Visits
+      </span>
+      <span className="text-xl sm:text-2xl font-semibold text-neon-blue">
+        {count ?? '—'}
+      </span>
+    </div>
   );
 };
