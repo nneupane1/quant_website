@@ -36,7 +36,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/trading" className="text-gray-400 hover:text-neon-cyan transition text-sm">
+                <a href="/engine" className="text-gray-400 hover:text-neon-cyan transition text-sm">
                   Live Trading
                 </a>
               </li>
