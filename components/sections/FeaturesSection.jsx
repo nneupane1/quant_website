@@ -17,7 +17,7 @@ export const FeaturesSection = () => {
             <span className="block mb-2">Institutional</span>
             <span className="gradient-text text-5xl md:text-6xl">Capabilities</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-400 max-w-4xl mx-auto text-sm md:text-base whitespace-nowrap">
             Enterprise-grade features designed for professional traders and quant researchers
           </p>
         </div>

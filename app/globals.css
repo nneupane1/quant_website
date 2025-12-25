@@ -151,7 +151,7 @@ body {
 }
 
 .animate-light-sweep {
-  animation: lightSweep 10s ease-in-out infinite;
+  animation: lightSweep 5s ease-in-out infinite;
 }
 
 @layer components {
