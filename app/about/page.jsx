@@ -18,12 +18,14 @@ export default function About() {
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
-            <img
-              src="/images/bull_bear.png"
-              alt="Bull and bear motif"
-              className="w-full rounded-2xl mb-2 -mt-6 object-cover object-top"
-              style={{ clipPath: 'inset(0 0 15% 0)' }}
-            />
+            <div className="w-full rounded-3xl overflow-hidden mb-2 -mt-6">
+              <img
+                src="/images/bull_bear.png"
+                alt="Bull and bear motif"
+                className="w-full object-cover object-top"
+                style={{ clipPath: 'inset(0 0 15% 0)' }}
+              />
+            </div>
             <div className="relative -mt-6 mb-6 h-4 overflow-hidden">
               <div className="absolute left-1/2 top-0 h-full w-2/3 -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-neon-blue/60 to-transparent blur-md animate-light-sweep" />
               <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent opacity-70 animate-light-sweep delay-[1.5s]" />

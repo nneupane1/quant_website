@@ -16,11 +16,13 @@ export default function Engine() {
         <AmbientBlobs />
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="mb-12 text-center">
-            <img
-              src="/images/tradingroom.png"
-              alt="QuantFund AI live trading room"
-              className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
-            />
+            <div className="w-[72%] mx-auto rounded-3xl overflow-hidden mb-2 -mt-6">
+              <img
+                src="/images/tradingroom.png"
+                alt="QuantFund AI live trading room"
+                className="w-full object-contain"
+              />
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 mt-8">
               <span className="gradient-text">Live Trading Room</span>
             </h1>
