@@ -20,10 +20,9 @@ export default function About() {
           <div className="mb-12 text-center">
             <div className="w-full rounded-[48px] overflow-hidden mb-2 -mt-6">
               <img
-                src="/images/bull_bear.png"
+                src="/images/bull_bear1.png"
                 alt="Bull and bear motif"
-                className="w-full object-cover object-top rounded-[48px]"
-                style={{ clipPath: 'inset(0 0 15% 0 round 48px)' }}
+                className="w-full object-cover object-center scale-110"
               />
             </div>
             <div className="relative -mt-6 mb-6 h-4 overflow-hidden">
