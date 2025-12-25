@@ -41,21 +41,24 @@ export default function About() {
           {/* Main Content */}
           <div className="space-y-12">
             {/* Vision */}
-            <section className="glass neon-border rounded-xl p-8 hover:border-neon-cyan transition-all duration-300 hover:translate-y-[-2px]">
-              <h2 className="text-3xl font-bold mb-4 text-neon-pink">Our Vision</h2>
-              <div className="space-y-4 text-gray-300 leading-relaxed">
-                <p>
-                  QuantFund AI is designed as a unified computational framework where research, model development, and live execution operate on a shared data and feature lineage. All tick and bar inputs are processed through a zero-latency, streaming transformation graph, incorporating time-aligned resampling, session encoding, volatility-normalized ATR scaling, and SMC-derived structural annotations.
-                </p>
-                <p>
-                  The analytical pipeline integrates heterogeneous feature classes: candle-geometry tensors, VWAP/Bollinger curvature metrics, MACD momentum derivatives, liquidity-distance embeddings, regime-state classifiers, and ML-generated microstructure proxies. These features populate both the online feature store and the historical backtest/forward-test engines, ensuring strict equivalence between offline research and online inference.
-                </p>
-                <p>
-                  All components &mdash; the backtester, the simulator, the dashboard analytics, and the live scanner &mdash; draw from this identical computational graph, eliminating divergence between research and real-time execution. When the system issues an execution candidate, it includes a fully structured reasoning vector: structural bias probabilities, retest classification, wick-flow dominance, liquidity gradient scores, volatility-regime likelihoods, risk-adjusted expectancy, and macro guardrail evaluations.
-                </p>
-                <p>
-                  The result is an institutional-grade, end-to-end ML architecture built for reliability, determinism, and adaptive response in dynamic markets. A platform where AI, market microstructure, and statistical modeling converge into a single reproducible pipeline, and where execution decisions are informed by the same models that shaped the research.
-                </p>
+            <section className="group relative glass neon-border rounded-xl p-8 transition-all duration-300 hover:translate-y-[-4px] overflow-hidden">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-blue/0 to-neon-pink/0 transition-all duration-300 group-hover:from-neon-blue/10 group-hover:to-neon-pink/8" />
+              <div className="relative z-10">
+                <h2 className="text-3xl font-bold mb-4 text-neon-pink">Our Vision</h2>
+                <div className="space-y-4 text-gray-300 leading-relaxed">
+                  <p>
+                    QuantFund AI is designed as a unified computational framework where research, model development, and live execution operate on a shared data and feature lineage. All tick and bar inputs are processed through a zero-latency, streaming transformation graph, incorporating time-aligned resampling, session encoding, volatility-normalized ATR scaling, and SMC-derived structural annotations.
+                  </p>
+                  <p>
+                    The analytical pipeline integrates heterogeneous feature classes: candle-geometry tensors, VWAP/Bollinger curvature metrics, MACD momentum derivatives, liquidity-distance embeddings, regime-state classifiers, and ML-generated microstructure proxies. These features populate both the online feature store and the historical backtest/forward-test engines, ensuring strict equivalence between offline research and online inference.
+                  </p>
+                  <p>
+                    All components &mdash; the backtester, the simulator, the dashboard analytics, and the live scanner &mdash; draw from this identical computational graph, eliminating divergence between research and real-time execution. When the system issues an execution candidate, it includes a fully structured reasoning vector: structural bias probabilities, retest classification, wick-flow dominance, liquidity gradient scores, volatility-regime likelihoods, risk-adjusted expectancy, and macro guardrail evaluations.
+                  </p>
+                  <p>
+                    The result is an institutional-grade, end-to-end ML architecture built for reliability, determinism, and adaptive response in dynamic markets. A platform where AI, market microstructure, and statistical modeling converge into a single reproducible pipeline, and where execution decisions are informed by the same models that shaped the research.
+                  </p>
+                </div>
               </div>
             </section>
 
