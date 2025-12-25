@@ -25,7 +25,7 @@ export default function Engine() {
               />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 mt-8">
-              <span className="gradient-text">Live Trading Room</span>
+              <span className="text-neon-blue">Live Trading Room</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
               A hedge fund level execution stack with deterministic research parity,

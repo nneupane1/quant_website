@@ -28,7 +28,7 @@ export default function Careers() {
               <span className="font-bold text-white">Hiring Opens Soon</span>
             </div>
             <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-6">
-              <span className="gradient-text">Careers at QuantFund AI</span>
+              <span className="text-neon-blue">Careers at QuantFund AI</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               We are building an institutional-grade quantitative research and execution platform.

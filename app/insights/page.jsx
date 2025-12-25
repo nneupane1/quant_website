@@ -16,13 +16,16 @@ export default function Insights() {
         <AmbientBlobs />
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="mb-12 text-center">
-            <img
-              src="/images/insights1.png"
-              alt="QuantFund AI insights"
-              className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
-            />
+            <div className="w-[72%] mx-auto rounded-[40px] overflow-hidden mb-2 -mt-6">
+              <img
+                src="/images/insights2.png"
+                alt="QuantFund AI insights"
+                className="w-full object-cover object-center"
+                style={{ clipPath: 'inset(12% 10% 12% 10% round 40px)' }}
+              />
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 mt-6">
-              <span className="gradient-text">Insights</span>
+              <span className="text-neon-blue">Insights</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
               A research-grade intelligence layer that turns market microstructure into actionable
