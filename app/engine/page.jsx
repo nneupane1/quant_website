@@ -18,9 +18,10 @@ export default function Engine() {
           <div className="mb-12 text-center">
             <div className="w-[72%] mx-auto rounded-[40px] overflow-hidden mb-2 -mt-6">
               <img
-                src="/images/tradingroom.png"
+                src="/images/tradingroom1.png"
                 alt="QuantFund AI live trading room"
-                className="w-full object-contain"
+                className="w-full object-cover object-center"
+                style={{ clipPath: 'inset(12% 10% 12% 10% round 40px)' }}
               />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 mt-8">
