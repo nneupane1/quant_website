@@ -17,7 +17,7 @@ export default function Insights() {
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <img
-              src="/images/insights.png"
+              src="/images/insights1.png"
               alt="QuantFund AI insights"
               className="w-[72%] mx-auto rounded-2xl mb-2 -mt-6 object-contain"
             />
