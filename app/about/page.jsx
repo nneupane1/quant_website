@@ -18,12 +18,12 @@ export default function About() {
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
-            <div className="w-full rounded-full overflow-hidden mb-2 -mt-6">
+            <div className="w-full rounded-[48px] overflow-hidden mb-2 -mt-6">
               <img
                 src="/images/bull_bear.png"
                 alt="Bull and bear motif"
-                className="w-full object-cover object-top"
-                style={{ clipPath: 'inset(0 0 15% 0)' }}
+                className="w-full object-cover object-top rounded-[48px]"
+                style={{ clipPath: 'inset(0 0 15% 0 round 48px)' }}
               />
             </div>
             <div className="relative -mt-6 mb-6 h-4 overflow-hidden">
@@ -41,7 +41,7 @@ export default function About() {
           {/* Main Content */}
           <div className="space-y-12">
             {/* Vision */}
-            <section className="glass neon-border rounded-xl p-8">
+            <section className="glass neon-border rounded-xl p-8 hover:border-neon-cyan transition-all duration-300 hover:translate-y-[-2px]">
               <h2 className="text-3xl font-bold mb-4 text-neon-pink">Our Vision</h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
