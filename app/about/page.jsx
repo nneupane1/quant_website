@@ -22,7 +22,8 @@ export default function About() {
               <img
                 src="/images/bull_bear1.png"
                 alt="Bull and bear motif"
-                className="w-full object-cover object-center scale-110"
+                className="w-full object-cover object-center"
+                style={{ clipPath: 'inset(12% 10% 12% 10% round 48px)' }}
               />
             </div>
             <div className="relative -mt-6 mb-6 h-4 overflow-hidden">
