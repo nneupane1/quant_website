@@ -15,7 +15,7 @@ export const FeaturesSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-8">
             <VisitCounter />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
