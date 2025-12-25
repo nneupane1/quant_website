@@ -16,7 +16,7 @@ export default function Careers() {
         <AmbientBlobs />
         <div className="relative z-10 max-w-5xl mx-auto">
           <div className="mb-12 text-center">
-            <div className="w-[72%] mx-auto rounded-3xl overflow-hidden mb-2 -mt-6">
+            <div className="w-[72%] mx-auto rounded-[40px] overflow-hidden mb-2 -mt-6">
               <img
                 src="/images/career1.png"
                 alt="Careers at QuantFund AI"

@@ -183,6 +183,37 @@ body {
     box-shadow: 0 0 0 1px rgba(139, 92, 255, 0.18), 0 0 24px rgba(139, 92, 255, 0.2);
   }
 
+  .neon-border,
+  .neon-border-cyan,
+  .neon-border-pink,
+  .neon-border-purple {
+    transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  }
+
+  .glass.neon-border:hover {
+    border-color: rgba(0, 212, 255, 0.6);
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.4), 0 0 36px rgba(0, 212, 255, 0.45),
+      0 0 70px rgba(0, 212, 255, 0.25);
+  }
+
+  .glass.neon-border-cyan:hover {
+    border-color: rgba(78, 242, 255, 0.65);
+    box-shadow: 0 0 0 1px rgba(78, 242, 255, 0.45), 0 0 36px rgba(78, 242, 255, 0.5),
+      0 0 70px rgba(78, 242, 255, 0.25);
+  }
+
+  .glass.neon-border-pink:hover {
+    border-color: rgba(255, 79, 216, 0.7);
+    box-shadow: 0 0 0 1px rgba(255, 79, 216, 0.45), 0 0 36px rgba(255, 79, 216, 0.45),
+      0 0 70px rgba(255, 79, 216, 0.25);
+  }
+
+  .glass.neon-border-purple:hover {
+    border-color: rgba(139, 92, 255, 0.7);
+    box-shadow: 0 0 0 1px rgba(139, 92, 255, 0.45), 0 0 36px rgba(139, 92, 255, 0.45),
+      0 0 70px rgba(139, 92, 255, 0.25);
+  }
+
   .gradient-text {
     background-image: linear-gradient(90deg, #4ef2ff, #00d4ff, #ff4fd8);
     -webkit-background-clip: text;

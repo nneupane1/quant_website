@@ -18,7 +18,7 @@ export default function About() {
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
-            <div className="w-full rounded-3xl overflow-hidden mb-2 -mt-6">
+            <div className="w-full rounded-[40px] overflow-hidden mb-2 -mt-6">
               <img
                 src="/images/bull_bear.png"
                 alt="Bull and bear motif"
