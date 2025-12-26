@@ -154,6 +154,20 @@ body {
   animation: lightSweep 5s ease-in-out infinite;
 }
 
+@keyframes santaFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(18px, -14px, 0);
+  }
+}
+
+.animate-santa-float {
+  animation: santaFloat 6.5s ease-in-out infinite;
+}
+
 @layer components {
   .glass {
     background: rgba(17, 24, 39, 0.6);

@@ -9,6 +9,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { ContactForm } from '@/components/sections/ContactForm';
 import { Footer } from '@/components/footer/Footer';
 import { AmbientBlobs } from '@/components/shared/AmbientBlobs';
+import { SeasonalSnow } from '@/components/seasonal/SeasonalSnow';
 
 export const metadata = {
   title: 'QuantFund AI - Quantitative Trading Platform',
@@ -18,6 +19,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-dark-bg text-white">
+      <SeasonalSnow />
       <Navigation />
       <HeroSection />
       <FeaturesSection />
