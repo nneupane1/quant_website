@@ -63,7 +63,10 @@ export default function Insights() {
           </section>
 
           <section className="glass neon-border rounded-xl p-8 mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-neon-cyan">What You See In Insights</h2>
+            <h2 className="text-3xl font-bold mb-6 text-neon-pink">What You See in Insights</h2>
+            <p className="text-white leading-relaxed mb-6">
+              The insights layer exposes the internal reasoning of the trading engine with the granularity of a research workstation and the clarity of an execution desk. Every signal surfaces its structural bias probabilities, retest classifications, wick-flow dominance, and liquidity-distance diagnostics, allowing you to see exactly how the underlying market mechanics shaped the setup. Momentum derivatives, VWAP curvature, volatility guards, and macro filters contextualize the market state, while risk-adjusted expectancy scores quantify the edge under current regime conditions. Each alert is backed by a fully traceable signal lineage—feature states, structural labels, model outputs, and calibration metadata—giving researchers a complete narrative of why the system favors a trade and whether execution conditions are met. The result is a transparency layer where confluence becomes visible, intuition becomes measurable, and every decision is supported by an auditable empirical footprint.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 'Structural bias probabilities and retest classifications',
@@ -74,7 +77,7 @@ export default function Insights() {
                 'Audit-ready signal lineage for every research narrative',
               ].map((item, i) => (
                 <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
-                  <span className="text-neon-green">✓</span>
+                  <span className="text-neon-blue">✓</span>
                   {item}
                 </div>
               ))}
@@ -83,15 +86,28 @@ export default function Insights() {
 
           <section className="glass neon-border-pink rounded-xl p-8">
             <h2 className="text-3xl font-bold mb-6 text-neon-pink">Institutional Context, Human Clarity</h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-white">
               <p>
-                Insights is not just reporting. It is a live reasoning layer that explains why a
-                signal exists, which parameters drove the outcome, and how execution should be staged.
+                Insights is not a reporting widget — it is the system’s reasoning interface, translating raw microstructure computations into explanations that a human can act on with conviction. Each signal is decomposed into its causal drivers: which structural shifts triggered the bias, which volatility conditions shaped the expectancy, which liquidity gradients validated the setup, and how the execution should be staged across risk boundaries. Instead of opaque alerts, you see the underlying physics of the trade — displacement mechanics, retest integrity, wick-flow dominance, regime likelihoods, and probability-calibrated confluence vectors.
               </p>
               <p>
-                Every insight is grounded in the same deterministic graph used in research, enabling
-                clarity, reproducibility, and confident decision-making in dynamic markets.
+                Behind the scenes, every insight is rendered from the same deterministic feature graph used in research, backtesting, and live execution. That means the logic is fully reproducible, drift-free, and audit-ready — the explanation you see is the exact logic the machine used. This continuity creates institutional clarity: decisions are traceable, parameter influences are explicit, and the human operator gains complete situational awareness in fast, adversarial markets. Insights becomes the bridge between quantitative rigor and human judgment.
               </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+              {[
+                'Decision Dashboards',
+                'Causal Trace Dashboards',
+                'Execution Readiness Dashboards',
+                'Regime Context Dashboards',
+                'Liquidity Lens Dashboards',
+                'Audit-Ready Dashboards',
+              ].map((item, i) => (
+                <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
+                  <span className="text-neon-blue">✓</span>
+                  {item}
+                </div>
+              ))}
             </div>
           </section>
         </div>
