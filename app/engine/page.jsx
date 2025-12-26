@@ -37,86 +37,25 @@ export default function Engine() {
             </p>
           </div>
 
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            {[
-              {
-                title: 'Execution Orchestration',
-                description:
-                  'Signal validation, order routing, and fill tracking operate on a unified parameter registry so live trades match research expectations.',
-              },
-              {
-                title: 'Risk Governance',
-                description:
-                  'VaR-aware exposure limits, regime-adjusted position sizing, and continuous stress checks keep execution within guardrails.',
-              },
-              {
-                title: 'Telemetry & Audit',
-                description:
-                  'Every decision emits a structured reasoning vector with confluence scores, regime likelihoods, and execution context.',
-              },
-            ].map((item, i) => (
-              <div key={i} className="glass neon-border rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-3 text-neon-cyan">{item.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{item.description}</p>
-              </div>
-            ))}
-          </section>
-
           <section className="glass neon-border rounded-xl p-8 mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-neon-cyan">Trading Room Capabilities</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                'Live scanner with deterministic confluence scoring and execution readiness checks',
-                'Feature store parity between backtest, forward test, and live inference',
-                'Liquidity-aware routing with pre-trade validation and post-trade reconciliation',
-                'Real-time dashboards for risk, exposure, and performance attribution',
-                'Structured alert vectors with bias probabilities and macro guardrail scores',
-                'Full audit trail exports for research review and compliance workflows',
-              ].map((item, i) => (
-                <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
-                  <span className="text-neon-green">✓</span>
-                  {item}
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section className="glass neon-border rounded-xl p-8 mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-neon-cyan">Research-to-Execution Parity</h2>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              The live trading room consumes the same feature graph used in backtests and simulations:
-              candle geometry tensors, liquidity-distance embeddings, VWAP and volatility curvature,
-              MACD momentum derivatives, and regime-state classifiers. This removes drift between
-              research and production.
+            <h2 className="text-3xl font-bold mb-6 text-neon-pink">Trading Room Capabilities</h2>
+            <p className="text-white leading-relaxed">
+              The trading room operates as a real-time decision engine where market data, structural signals, and ML-calibrated confluence vectors converge into auditable execution intent. Every incoming bar is transformed through the live feature graph, where session context, ATR regimes, liquidity distances, curvature metrics, and structural annotations are computed deterministically. Signal evaluators run in micro-batched cycles, checking execution-readiness conditions such as volatility thresholds, macro guardrails, and liquidity posture before producing actionable alert vectors. The routing layer incorporates pre-trade validation, slippage forecasting, and post-trade reconciliation, ensuring that execution logic is consistent with both model assumptions and market microstructure. Dashboards stream latency, drift, exposure, PnL decomposition, and stress readouts in real time, enabling the trading room to function with the transparency and responsiveness of an institutional execution desk. Every alert, decision, and model output is captured in a structured audit trail, creating a fully traceable and compliance-ready environment.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                'Streaming resampling with session encoding and ATR normalization',
-                'Deterministic confluence scoring with ML probability calibration',
-                'Structured alert vectors with liquidity gradients and bias probabilities',
-                'Full trade and decision audit trails for compliance review',
-              ].map((item, i) => (
-                <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
-                  <span className="text-neon-green">✓</span>
-                  {item}
-                </div>
-              ))}
-            </div>
           </section>
 
-          <section className="glass neon-border-pink rounded-xl p-8">
+          <section className="glass neon-border rounded-xl p-8 mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-neon-pink">Research-to-Execution Parity</h2>
+            <p className="text-white leading-relaxed">
+              The system enforces strict equivalence between research outputs and live trading decisions by binding both environments to the same declarative feature graph. All transformations—resampling operators, session encodings, ATR normalization, candle geometry tensors, liquidity-distance embeddings, VWAP and volatility curvature, MACD derivatives, and regime-state classifiers—are computed through a centralized registry shared by the backtester, simulator, and live engine. This eliminates one of the most common sources of quant failure: drift between historical inference and live execution. ML signals are probability-calibrated in research and then deployed with version-locked parameters to guarantee consistent behavior across environments. Structured alert vectors carry liquidity gradients, bias probabilities, regime likelihoods, and contextual metadata, enabling both automated and discretionary workflows to review the same information that shaped the model’s decision. Full trade trails are exported for post-analysis, allowing researchers to replay executions with exact feature states, ensuring reproducibility and governance at institutional standards.
+            </p>
+          </section>
+
+          <section className="glass neon-border rounded-xl p-8">
             <h2 className="text-3xl font-bold mb-6 text-neon-pink">Market-Grade Execution Discipline</h2>
-            <div className="space-y-4 text-gray-300">
-              <p>
-                Orders are staged with pre-trade validation, limit protections, and latency-aware routing.
-                Every execution candidate is stress-scored against volatility regimes, macro guardrails,
-                and liquidity conditions before it ever hits the market.
-              </p>
-              <p>
-                This architecture is designed to behave as a responsible liquidity participant, reducing
-                market impact while maintaining deterministic performance and transparent governance.
-              </p>
-            </div>
+            <p className="text-white leading-relaxed">
+              Execution is governed by a rigorously defined risk and microstructure framework designed to behave like a responsible liquidity participant rather than a retail-order generator. Every order is staged through a pre-trade validation layer that evaluates volatility regimes, liquidity shelves, macro guardrails, expected slippage, and counterparty conditions before approval. Orders that pass these checks are routed through a latency-aware engine capable of switching paths during volatility spikes, liquidity fractures, or widening spreads. Limit protections, exposure caps, adaptive position sizing, and real-time trailing logic ensure that trades evolve in sync with market conditions rather than fixed assumptions. Post-trade reconciliation matches fills against expected impact, validating that execution behavior remains within acceptable error surfaces. The entire architecture is designed to minimize adverse selection, reduce footprint, and maintain deterministic performance—functioning as a disciplined liquidity provider-in-training, guided by modeling rigor and transparent governance.
+            </p>
           </section>
         </div>
       </section>
