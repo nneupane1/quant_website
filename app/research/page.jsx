@@ -73,6 +73,7 @@ export default function Research() {
                 paper.title === 'Machine Learning for Quantitative Trading' ||
                 paper.title === 'Risk Management at Institutional Scale' ||
                 paper.title === 'Live Trading Architecture';
+              const isMachineLearning = paper.title === 'Machine Learning for Quantitative Trading';
 
               return (
                 <article
@@ -92,7 +93,9 @@ export default function Research() {
                     {paper.tags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-neon-blue/10 border border-neon-blue text-neon-blue text-sm rounded-full"
+                        className={`px-3 py-1 bg-neon-blue/10 border border-neon-blue text-neon-blue rounded-full whitespace-nowrap ${
+                          isMachineLearning ? 'text-[11px] md:text-xs px-2.5 py-1' : 'text-sm'
+                        }`}
                       >
                         {tag}
                       </span>
