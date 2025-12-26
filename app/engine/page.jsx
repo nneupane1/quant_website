@@ -32,8 +32,7 @@ export default function Engine() {
               <span className="text-neon-blue">Live Trading Room</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
-              A hedge fund level execution stack with deterministic research parity,
-              microstructure-aware routing, and audit-grade telemetry.
+              A high-precision trade execution stack with deterministic research parity, microstructure-aware routing, and audit-grade telemetry.
             </p>
           </div>
 
