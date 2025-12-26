@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-const SEASONAL_START = new Date('2025-12-26T00:00:00');
+const SEASONAL_START = new Date('2025-12-24T00:00:00');
 const SEASONAL_END = new Date('2025-12-29T00:00:00');
 
 export const SeasonalSnow = () => {
@@ -27,17 +27,22 @@ export const SeasonalSnow = () => {
     let height = 0;
     let flakes = [];
     let animationFrameId = 0;
+    let hideTimerId = 0;
 
     const createFlakes = () => {
-      const count = Math.min(220, Math.max(120, Math.floor(width / 6)));
-      flakes = Array.from({ length: count }, () => ({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        radius: Math.random() * 2 + 0.6,
-        speed: Math.random() * 1.6 + 0.4,
-        drift: (Math.random() - 0.5) * 0.6,
-        opacity: Math.random() * 0.5 + 0.4,
-      }));
+      const count = Math.min(280, Math.max(160, Math.floor(width / 5)));
+      flakes = Array.from({ length: count }, () => {
+        const isStar = Math.random() < 0.18;
+        return {
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: isStar ? Math.random() * 1.4 + 0.6 : Math.random() * 2.4 + 1,
+          speed: Math.random() * 1.8 + 0.5,
+          drift: (Math.random() - 0.5) * 0.7,
+          opacity: Math.random() * 0.45 + 0.45,
+          twinkle: isStar ? Math.random() * 0.5 + 0.5 : 1,
+        };
+      });
     };
 
     const resize = () => {
@@ -73,9 +78,10 @@ export const SeasonalSnow = () => {
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
       ctx.save();
-      ctx.fillStyle = '#ffffff';
       flakes.forEach((flake) => {
-        ctx.globalAlpha = flake.opacity;
+        const alpha = flake.opacity * (flake.twinkle + Math.sin((flake.y + flake.x) * 0.002) * 0.15);
+        ctx.globalAlpha = Math.max(0.15, Math.min(0.9, alpha));
+        ctx.fillStyle = '#ffffff';
         ctx.beginPath();
         ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
         ctx.fill();
@@ -92,10 +98,12 @@ export const SeasonalSnow = () => {
     resize();
     window.addEventListener('resize', resize);
     tick();
+    hideTimerId = window.setTimeout(() => setActive(false), 5000);
 
     return () => {
       window.removeEventListener('resize', resize);
       window.cancelAnimationFrame(animationFrameId);
+      window.clearTimeout(hideTimerId);
     };
   }, [active]);
 
@@ -105,10 +113,10 @@ export const SeasonalSnow = () => {
     <div className="pointer-events-none fixed inset-0 z-20">
       <canvas ref={canvasRef} className="h-full w-full" />
       <img
-        src="/images/santa.png"
+        src="/images/santa2.png"
         alt=""
         aria-hidden="true"
-        className="absolute left-4 sm:left-8 top-[28%] w-20 sm:w-28 md:w-36 drop-shadow-[0_18px_28px_rgba(0,0,0,0.55)] animate-santa-float"
+        className="absolute left-0 top-[28%] w-20 sm:w-28 md:w-36 drop-shadow-[0_18px_28px_rgba(0,0,0,0.55)] animate-santa-fly"
       />
     </div>
   );

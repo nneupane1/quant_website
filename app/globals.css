@@ -168,6 +168,24 @@ body {
   animation: santaFloat 6.5s ease-in-out infinite;
 }
 
+@keyframes santaFly {
+  0% {
+    transform: translate3d(-10%, 0, 0);
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(90vw, 0, 0);
+    opacity: 0.9;
+  }
+}
+
+.animate-santa-fly {
+  animation: santaFly 5s linear forwards;
+}
+
 @layer components {
   .glass {
     background: rgba(17, 24, 39, 0.6);
