@@ -257,6 +257,18 @@ body {
     text-shadow: 0 0 18px rgba(78, 242, 255, 0.45), 0 0 38px rgba(255, 79, 216, 0.2);
   }
 
+  .nav-pop {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.22s ease, text-shadow 0.22s ease, color 0.22s ease;
+    will-change: transform;
+  }
+
+  .nav-pop:hover {
+    transform: translateY(-2px) scale(1.12);
+    text-shadow: 0 0 12px rgba(78, 242, 255, 0.55), 0 0 20px rgba(0, 212, 255, 0.35);
+  }
+
 .script-text {
     font-family: 'Monotiva Cursiva', 'Monotype Corsiva', 'Dancing Script', 'Merriweather', cursive;
     font-style: italic;
