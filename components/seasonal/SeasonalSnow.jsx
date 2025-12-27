@@ -98,7 +98,7 @@ export const SeasonalSnow = () => {
     resize();
     window.addEventListener('resize', resize);
     tick();
-    hideTimerId = window.setTimeout(() => setActive(false), 5000);
+    hideTimerId = window.setTimeout(() => setActive(false), 10000);
 
     return () => {
       window.removeEventListener('resize', resize);
@@ -116,7 +116,7 @@ export const SeasonalSnow = () => {
         src="/images/santa2.png"
         alt=""
         aria-hidden="true"
-        className="absolute left-0 top-[28%] w-20 sm:w-28 md:w-36 drop-shadow-[0_18px_28px_rgba(0,0,0,0.55)] animate-santa-fly"
+        className="absolute left-0 top-[14%] w-[700px] sm:w-[800px] md:w-[900px] lg:w-[1000px] drop-shadow-[0_18px_28px_rgba(0,0,0,0.55)] animate-santa-fly"
       />
     </div>
   );
