@@ -58,7 +58,7 @@ export const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-base lg:text-lg font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10">
+        <p className="text-[0.75rem] md:text-[0.9rem] lg:text-[1rem] font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10">
           <span className="block">
             <span className="text-neon-cyan">•</span>
             <span className="ml-2">Research &amp; Signal Intelligence</span>
