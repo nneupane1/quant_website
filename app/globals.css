@@ -183,7 +183,7 @@ body {
 }
 
 .animate-santa-fly {
-  animation: santaFly 10s linear forwards;
+  animation: santaFly 20s linear forwards;
 }
 
 @layer components {

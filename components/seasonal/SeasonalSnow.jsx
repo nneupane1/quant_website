@@ -98,7 +98,7 @@ export const SeasonalSnow = () => {
     resize();
     window.addEventListener('resize', resize);
     tick();
-    hideTimerId = window.setTimeout(() => setActive(false), 10000);
+    hideTimerId = window.setTimeout(() => setActive(false), 20000);
 
     return () => {
       window.removeEventListener('resize', resize);
