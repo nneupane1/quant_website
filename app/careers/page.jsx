@@ -18,9 +18,10 @@ export default function Careers() {
           <div className="mb-12 text-center">
             <div className="w-[72%] mx-auto rounded-[40px] overflow-hidden -mt-10 mb-4">
               <img
-                src="/images/career1.png"
+                src="/images/interview.png"
                 alt="Careers at QuantFund AI"
-                className="w-full object-contain"
+                className="w-full object-cover"
+                style={{ clipPath: 'inset(6% 6% 8% 6% round 36px)' }}
               />
             </div>
             <div className="relative mb-4 h-4 overflow-hidden">
