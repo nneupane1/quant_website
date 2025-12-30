@@ -21,7 +21,7 @@ export default function Careers() {
                 src="/images/interview.png"
                 alt="Careers at QuantFund AI"
                 className="w-full object-cover"
-                style={{ clipPath: 'inset(6% 6% 8% 6% round 36px)' }}
+                style={{ clipPath: 'inset(2.9% 5.3% 2.3% 5.3% round 220px)' }}
               />
             </div>
             <div className="relative mb-4 h-4 overflow-hidden">
