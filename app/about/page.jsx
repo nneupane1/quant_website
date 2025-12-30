@@ -155,6 +155,46 @@ export default function About() {
                 Markets may shift without warning, but the system&apos;s foundation remains invariant, transparent, and mathematically traceable. In this environment, uncertainty belongs to the market&mdash;not to the models that trade it.
               </p>
             </section>
+
+            <section className="glass neon-border rounded-xl p-8">
+              <h2 className="text-3xl font-bold mb-4 text-neon-pink">What QuantFund AI Is Not</h2>
+              <div className="space-y-4 text-gray-300 leading-relaxed">
+                <p>
+                  QuantFund AI is not a hedge fund, not a brokerage, and not a trading-signal service. It is a closed, high-fidelity research engine&mdash;an internal laboratory where models, risk systems, and execution algorithms are developed without the structural, legal, or operational obligations associated with managing outside capital. The platform trades only proprietary capital, and every component is designed for depth of intelligence rather than distribution of service. Nothing on this site constitutes financial advice, an offer of investment, or a solicitation of funds.
+                </p>
+                <p>
+                  The system governs a single proprietary capital process <span className="font-mono text-gray-100">C(t)</span>, defined on its natural filtration.
+                </p>
+              </div>
+              <div className="mt-4 space-y-4 text-gray-300 leading-relaxed">
+                <div className="text-center text-sm md:text-base font-mono text-gray-100 bg-white/5 rounded-lg px-4 py-3">
+                  F<sub>t</sub> = &sigma;&#123;X(s): s &le; t&#125;
+                </div>
+                <p>
+                  where <span className="font-mono text-gray-100">X(t)</span> represents the live feature-state vector of the market and the model. All decisions arise from one unified stochastic control policy{' '}
+                  <span className="font-mono text-gray-100">&pi;: F<sub>t</sub> &rarr; U</span>, yielding a single controlled Ito dynamic:
+                </p>
+                <div className="text-center text-sm md:text-base font-mono text-gray-100 bg-white/5 rounded-lg px-4 py-3">
+                  dC(t) = &mu;<sub>&pi;</sub>(t) C(t) dt + &sigma;<sub>&pi;</sub>(t) C(t) dW<sub>t</sub>.
+                </div>
+                <p>
+                  No family of external capital processes{' '}
+                  <span className="font-mono text-gray-100">&#123;C<sub>i</sub>(t)&#125;<sub>i=1</sub><sup>N</sup></span>, no client-specific policies, no fiduciary risk envelopes, and no regulatory capital partitions exist inside the architecture. The system solves one internal optimization problem,
+                </p>
+                <div className="text-center text-sm md:text-base font-mono text-gray-100 bg-white/5 rounded-lg px-4 py-3">
+                  max<sub>&pi;</sub> E&#91;U(C(T)) | F<sub>t</sub>&#93;
+                </div>
+                <p>
+                  rather than a multi-agent or multi-allocator control problem. This mathematical structure ensures purity of inference, clarity of risk, and complete legal isolation from activities associated with asset management or portfolio administration for others.
+                </p>
+                <p>
+                  Although QuantFund AI does not accept deposits, manage external portfolios, or operate as a regulated financial entity, its architecture is engineered with a horizon for institutional evolution. The modular risk engines, execution kernels, and ML operators are designed such that, when regulatory pathways and strategic conditions align, the system could expand into a multi-account, regulated framework&mdash;whether through licensing, institutional partnership, or acquisition by a quantitative desk seeking a deterministic ML infrastructure.
+                </p>
+                <p>
+                  Until such a transition is explicitly pursued, QuantFund AI remains a black-box research organism&mdash;a solitary stochastic engine refining its mathematics in-house, trading only personal capital, and preparing for the moment when its engineering maturity and compliance posture justify scaling into a larger institutional role.
+                </p>
+              </div>
+            </section>
           </div>
         </div>
       </section>
