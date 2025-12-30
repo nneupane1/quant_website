@@ -167,21 +167,21 @@ export default function About() {
                 </p>
               </div>
               <div className="mt-4 space-y-4 text-gray-300 leading-relaxed">
-                <div className="text-center text-2xl md:text-3xl font-semibold text-gray-100 my-6 font-serif">
+                <div className="text-center text-xl md:text-2xl font-semibold text-gray-100 my-6 font-serif">
                   F<sub>t</sub> = &sigma;&#123;X(s): s &le; t&#125;
                 </div>
                 <p>
                   where <span className="font-mono text-gray-100">X(t)</span> represents the live feature-state vector of the market and the model. All decisions arise from one unified stochastic control policy{' '}
                   <span className="font-mono text-gray-100">&pi;: F<sub>t</sub> &rarr; U</span>, yielding a single controlled Ito dynamic:
                 </p>
-                <div className="text-center text-2xl md:text-3xl font-semibold text-gray-100 my-6 font-serif">
+                <div className="text-center text-xl md:text-2xl font-semibold text-gray-100 my-6 font-serif">
                   dC(t) = &mu;<sub>&pi;</sub>(t) C(t) dt + &sigma;<sub>&pi;</sub>(t) C(t) dW<sub>t</sub>.
                 </div>
                 <p>
                   No family of external capital processes{' '}
                   <span className="font-mono text-gray-100">&#123;C<sub>i</sub>(t)&#125;<sub>i=1</sub><sup>N</sup></span>, no client-specific policies, no fiduciary risk envelopes, and no regulatory capital partitions exist inside the architecture. The system solves one internal optimization problem,
                 </p>
-                <div className="text-center text-2xl md:text-3xl font-semibold text-gray-100 my-6 font-serif">
+                <div className="text-center text-xl md:text-2xl font-semibold text-gray-100 my-6 font-serif">
                   max<sub>&pi;</sub> E&#91;U(C(T)) | F<sub>t</sub>&#93;
                 </div>
                 <p>
