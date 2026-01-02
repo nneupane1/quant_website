@@ -55,6 +55,10 @@ body {
   background: #334155;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
