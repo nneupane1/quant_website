@@ -40,7 +40,7 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 mb-6 mt-4 sm:mt-8 glass neon-border rounded-full text-[0.42rem] sm:text-sm font-medium animate-float-x"
+          className="inline-flex items-center gap-2 px-2 py-1 sm:px-4 sm:py-2 mb-6 mt-4 sm:mt-8 glass neon-border rounded-full text-[0.42rem] sm:text-sm font-medium animate-float-x"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">
@@ -51,7 +51,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-10 sm:mt-4 mb-8 animate-fade-in leading-tight">
+        <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-16 sm:mt-4 mb-8 animate-fade-in leading-tight">
           <span className="block">Quantitative</span>
           <span className="gradient-text block text-[1.5rem] md:text-[1.875rem] lg:text-[3rem] font-black">Trading</span>
           <span className="block">Reimagined</span>
