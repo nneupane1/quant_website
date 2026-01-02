@@ -40,7 +40,7 @@ export const HeroSection = () => {
         {/* Badge */}
         <div
           data-glow
-          className="inline-flex items-center gap-2 px-2 py-1 sm:px-4 sm:py-2 mb-6 mt-4 sm:mt-8 glass neon-border rounded-full text-[0.42rem] sm:text-sm font-medium animate-float-x"
+          className="inline-flex items-center gap-2 px-1 py-0.5 sm:px-4 sm:py-2 mb-6 mt-4 sm:mt-8 glass neon-border rounded-full text-[0.42rem] sm:text-sm font-medium animate-float-x"
         >
           <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
           <span className="font-bold text-white">
