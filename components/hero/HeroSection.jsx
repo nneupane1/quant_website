@@ -37,41 +37,43 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Badge */}
-        <div
-          data-glow
-          className="inline-flex items-center gap-2 px-1 py-0.5 sm:px-4 sm:py-2 mb-6 mt-5 sm:mt-8 glass neon-border rounded-full text-[0.42rem] sm:text-sm font-medium animate-float-x"
-        >
-          <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-          <span className="font-bold text-white">
-            <span>ALGORITHMIC</span>
-            <span className="ml-2">TRADING</span>
-            <span className="ml-2">STACK</span>
-          </span>
+        <div className="-translate-y-16 sm:translate-y-0">
+          {/* Badge */}
+          <div
+            data-glow
+            className="inline-flex items-center gap-2 px-1 py-0.5 sm:px-4 sm:py-2 mb-6 mt-5 sm:mt-8 glass neon-border rounded-full text-[0.42rem] sm:text-sm font-medium animate-float-x"
+          >
+            <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
+            <span className="font-bold text-white">
+              <span>ALGORITHMIC</span>
+              <span className="ml-2">TRADING</span>
+              <span className="ml-2">STACK</span>
+            </span>
+          </div>
+
+          {/* Main Title */}
+          <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-16 sm:mt-4 mb-8 animate-fade-in leading-tight">
+            <span className="block">Quantitative</span>
+            <span className="gradient-text block text-[1.5rem] md:text-[1.875rem] lg:text-[3rem] font-black">Trading</span>
+            <span className="block">Reimagined</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-[0.6rem] md:text-[0.72rem] lg:text-[0.8rem] font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10 leading-relaxed sm:leading-normal">
+            <span className="block">
+              <span className="text-neon-cyan">•</span>
+              <span className="ml-2">Research &amp; Signal Intelligence</span>
+              <span className="mx-3 text-neon-cyan">•</span>
+              <span>Machine Learning Confluence Ranking</span>
+            </span>
+            <span className="block">
+              <span className="text-neon-cyan">•</span>
+              <span className="ml-2">Deterministic Risk &amp; Execution Framework</span>
+              <span className="mx-3 text-neon-cyan">•</span>
+              <span>Precision Filtering &amp; Scoring</span>
+            </span>
+          </p>
         </div>
-
-        {/* Main Title */}
-        <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-16 sm:mt-4 mb-8 animate-fade-in leading-tight">
-          <span className="block">Quantitative</span>
-          <span className="gradient-text block text-[1.5rem] md:text-[1.875rem] lg:text-[3rem] font-black">Trading</span>
-          <span className="block">Reimagined</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="text-[0.6rem] md:text-[0.72rem] lg:text-[0.8rem] font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10 leading-relaxed sm:leading-normal">
-          <span className="block">
-            <span className="text-neon-cyan">•</span>
-            <span className="ml-2">Research &amp; Signal Intelligence</span>
-            <span className="mx-3 text-neon-cyan">•</span>
-            <span>Machine Learning Confluence Ranking</span>
-          </span>
-          <span className="block">
-            <span className="text-neon-cyan">•</span>
-            <span className="ml-2">Deterministic Risk &amp; Execution Framework</span>
-            <span className="mx-3 text-neon-cyan">•</span>
-            <span>Precision Filtering &amp; Scoring</span>
-          </span>
-        </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center -mt-4 mb-8">
