@@ -27,9 +27,9 @@ export const Navigation = () => {
           {visitCount ?? '—'} Visits
         </span>
       </div>
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 md:gap-0">
         {/* Logo */}
-        <Link href="/" className="-ml-1 sm:-ml-2 flex items-center hover:opacity-80 transition">
+        <Link href="/" className="mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-80 transition">
           <span className="text-xl sm:text-2xl font-bold text-white tracking-wide">
             QuantFund AI <span className="text-white">x</span>{' '}
             <span className="text-white">Nischal</span>
@@ -72,10 +72,17 @@ export const Navigation = () => {
             About
           </Link>
           <details className="relative">
-            <summary className="nav-pop text-gray-300 hover:text-neon-cyan font-semibold cursor-pointer list-none">
+            <summary className="nav-pop text-neon-cyan font-semibold cursor-pointer list-none px-4 py-1.5 rounded-full glass neon-border shadow-[0_0_16px_rgba(78,242,255,0.25)] hover:shadow-[0_0_24px_rgba(78,242,255,0.4)] transition-all flex items-center gap-2">
               More
+              <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </summary>
-            <div className="absolute left-1/2 top-full mt-2 w-48 -translate-x-1/2 rounded-xl glass neon-border p-3 text-center">
+            <div className="absolute left-1/2 top-full mt-2 w-52 -translate-x-1/2 rounded-xl glass neon-border p-3 text-center shadow-[0_0_24px_rgba(0,212,255,0.25)]">
               <div className="flex flex-col gap-2 text-[0.72rem]">
                 <Link href="/research" className="nav-pop text-gray-300 hover:text-neon-cyan font-semibold">
                   Research

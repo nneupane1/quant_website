@@ -59,6 +59,15 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+details[open] summary svg {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+details summary svg {
+  transition: transform 0.2s ease;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
