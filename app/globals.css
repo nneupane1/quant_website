@@ -329,6 +329,13 @@ body {
   background-position: center top;
 }
 
+@media (max-width: 640px) {
+  .hero-bg {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
 @layer utilities {
   .animation-delay-200 {
     animation-delay: 200ms;

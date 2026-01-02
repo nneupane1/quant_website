@@ -30,7 +30,7 @@ export const HeroSection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-[clamp(12rem,18vw,28rem)] pb-12 md:pb-16"
+      className="relative w-full min-h-screen flex items-start justify-center overflow-hidden bg-dark-bg pt-32 sm:pt-[clamp(12rem,18vw,28rem)] pb-12 md:pb-16"
     >
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0 hero-bg" />
@@ -58,7 +58,7 @@ export const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-[0.6rem] md:text-[0.72rem] lg:text-[0.8rem] font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10">
+        <p className="text-[0.6rem] md:text-[0.72rem] lg:text-[0.8rem] font-semibold text-gray-300 max-w-4xl mx-auto mt-4 mb-10 leading-relaxed sm:leading-normal">
           <span className="block">
             <span className="text-neon-cyan">•</span>
             <span className="ml-2">Research &amp; Signal Intelligence</span>
@@ -85,7 +85,7 @@ export const HeroSection = () => {
             Learn More
           </button>
         </div>
-        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-2 sm:mt-4 whitespace-nowrap">
+        <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-2 sm:mt-4 px-2 whitespace-normal sm:whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
         </p>
 
