@@ -16,7 +16,7 @@ export default function Engine() {
         <AmbientBlobs />
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="mb-12 text-center">
-            <div className="w-[79%] mx-auto rounded-[40px] overflow-hidden -mt-10 mb-4">
+            <div className="w-[95%] sm:w-[79%] mx-auto rounded-[40px] overflow-hidden -mt-10 mb-4">
               <img
                 src="/images/tradingroom1.png"
                 alt="QuantFund AI live trading room"

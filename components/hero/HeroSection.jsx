@@ -52,7 +52,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-16 sm:mt-4 mb-8 animate-fade-in leading-tight">
+          <h1 className="text-[1.125rem] md:text-[1.5rem] lg:text-[2.25rem] font-bold mt-8 sm:mt-4 mb-8 animate-fade-in leading-tight -translate-y-12 sm:translate-y-0">
             <span className="block">Quantitative</span>
             <span className="gradient-text block text-[1.5rem] md:text-[1.875rem] lg:text-[3rem] font-black">Trading</span>
             <span className="block">Reimagined</span>
