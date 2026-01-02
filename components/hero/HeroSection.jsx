@@ -81,9 +81,12 @@ export const HeroSection = () => {
           >
             Explore Now
           </button>
-          <button className="px-8 py-4 glass neon-border text-neon-blue font-bold rounded-lg hover:bg-neon-blue/10 transition-all duration-300">
+          <a
+            href="/about"
+            className="px-8 py-4 glass neon-border text-neon-blue font-bold rounded-lg hover:bg-neon-blue/10 transition-all duration-300 inline-flex items-center justify-center"
+          >
             Learn More
-          </button>
+          </a>
         </div>
         <p className="script-text text-[1.6rem] sm:text-[1.9rem] lg:text-[2.55rem] font-bold text-neon-pink/80 mt-2 sm:mt-4 px-2 whitespace-normal sm:whitespace-nowrap">
           Regime shifts don&apos;t warn you, our models do ...
