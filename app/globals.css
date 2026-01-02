@@ -344,7 +344,7 @@ details summary svg {
 
 @media (max-width: 640px) {
   .hero-bg {
-    background-size: cover;
+    background-size: contain;
     background-position: center top;
   }
 }
