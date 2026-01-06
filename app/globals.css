@@ -164,7 +164,7 @@ details summary svg {
 }
 
 .animate-light-sweep {
-  animation: lightSweep 2s ease-in-out infinite;
+  animation: lightSweep 3s ease-in-out infinite;
 }
 
 @keyframes santaFloat {

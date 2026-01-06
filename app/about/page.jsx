@@ -31,7 +31,7 @@ export default function About() {
               <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent opacity-70 animate-light-sweep delay-[1.5s]" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-4">
-              <span className="text-neon-blue text-[2.55rem] md:text-[3.2rem] block">About QuantFund AI</span>
+              <span className="text-neon-blue text-[2.15rem] md:text-[2.7rem] block">About QuantFund AI</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed mx-auto">
               A forensic-level quant lab that unifies institutional-grade research, simulation, and live execution.
