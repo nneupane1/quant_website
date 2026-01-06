@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <main className="w-full min-h-screen overflow-x-hidden">
+    <main className="w-full min-h-screen">
       <Navigation />
       
       <section className="relative pt-16 md:pt-20 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">

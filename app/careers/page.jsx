@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Careers() {
   return (
-    <main className="w-full min-h-screen overflow-x-hidden">
+    <main className="w-full min-h-screen">
       <Navigation />
 
       <section className="relative pt-20 md:pt-24 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
