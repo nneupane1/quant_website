@@ -21,7 +21,7 @@ export const Navigation = () => {
   }, []);
 
   return (
-    <nav className="relative sticky top-0 z-40 bg-gradient-to-r from-[#05060a] via-[#0b0f14] to-[#05060a] border-b border-dark-border backdrop-blur overflow-visible shadow-[0_20px_60px_rgba(0,212,255,0.12)]">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-[#05060a] via-[#0b0f14] to-[#05060a] border-b border-dark-border backdrop-blur overflow-visible shadow-[0_20px_60px_rgba(0,212,255,0.12)]">
       <div className="hidden sm:block absolute left-2 sm:left-3 top-1/2 -translate-y-1/2">
         <span className="text-[9px] sm:text-[10px] text-neon-cyan/80 tracking-[0.18em] uppercase">
           {visitCount ?? '—'} Visits
