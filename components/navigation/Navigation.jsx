@@ -6,10 +6,10 @@ export const Navigation = () => {
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-[#07090d]/95 via-[#0b111a]/85 to-[#07090d]/95 border-b border-white/5 backdrop-blur-2xl overflow-visible shadow-[0_20px_80px_rgba(0,212,255,0.16)]">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/10 opacity-40" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-neon-cyan/60 to-transparent opacity-70" />
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 md:gap-0">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
-          <span className="text-xl sm:text-2xl font-semibold tracking-[0.16em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-neon-cyan">
+          <span className="text-xl sm:text-2xl font-semibold tracking-[0.08em] text-slate-100">
             QuantFund AI <span className="text-white">x</span>{' '}
             <span className="text-white">Nischal</span>
           </span>
@@ -17,27 +17,27 @@ export const Navigation = () => {
 
         {/* Menu */}
         <div className="hidden md:flex items-center gap-12">
-          <Link href="/" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
+          <Link href="/" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
             Home
           </Link>
-          <Link href="/about" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
+          <Link href="/about" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
             About
           </Link>
-          <Link href="/research" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
+          <Link href="/research" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
             Research
           </Link>
-          <Link href="/engine" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
+          <Link href="/engine" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
             Live Trading
           </Link>
-          <Link href="/insights" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
+          <Link href="/insights" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
             Insights
           </Link>
-          <Link href="/careers" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
+          <Link href="/careers" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
             Careers
           </Link>
           <Link
             href="/#contact"
-            className="rounded-full px-5 py-2.5 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-slate-900 bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple shadow-[0_10px_30px_rgba(0,212,255,0.35)] hover:shadow-[0_16px_40px_rgba(139,92,255,0.35)] transition-all"
+            className="rounded-full px-5 py-2.5 text-xs font-semibold tracking-[0.24em] uppercase text-slate-900 bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple shadow-[0_10px_30px_rgba(0,212,255,0.35)] hover:shadow-[0_16px_40px_rgba(139,92,255,0.35)] transition-all"
           >
             Contact
           </Link>
