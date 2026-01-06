@@ -9,30 +9,30 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
-          <span className="text-xl sm:text-2xl font-semibold tracking-[0.08em] text-slate-100">
-            QuantFund AI <span className="text-white">x</span>{' '}
-            <span className="text-white">Nischal</span>
+          <span className="text-xl sm:text-2xl font-semibold tracking-[0.08em] text-[#AAB6C5]">
+            QuantFund AI <span className="text-[#AAB6C5]">x</span>{' '}
+            <span className="text-[#AAB6C5]">Nischal</span>
           </span>
         </Link>
 
         {/* Menu */}
         <div className="hidden md:flex items-center gap-12">
-          <Link href="/" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
+          <Link href="/" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan text-sm font-medium tracking-wide">
             Home
           </Link>
-          <Link href="/about" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
+          <Link href="/about" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan text-sm font-medium tracking-wide">
             About
           </Link>
-          <Link href="/research" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
+          <Link href="/research" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan text-sm font-medium tracking-wide">
             Research
           </Link>
-          <Link href="/engine" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
+          <Link href="/engine" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan text-sm font-medium tracking-wide">
             Live Trading
           </Link>
-          <Link href="/insights" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
+          <Link href="/insights" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan text-sm font-medium tracking-wide">
             Insights
           </Link>
-          <Link href="/careers" className="nav-pop text-gray-300 hover:text-neon-cyan text-sm font-medium tracking-wide">
+          <Link href="/careers" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan text-sm font-medium tracking-wide">
             Careers
           </Link>
           <Link
@@ -47,10 +47,10 @@ export const Navigation = () => {
 
       <div className="md:hidden border-t border-dark-border/60 bg-black/20 px-4 pb-3 pt-2">
         <div className="flex items-center justify-center gap-6 text-[0.72rem] tracking-wide">
-          <Link href="/" className="nav-pop text-slate-100/80 hover:text-neon-cyan font-semibold uppercase tracking-[0.18em]">
+          <Link href="/" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold uppercase tracking-[0.18em]">
             Home
           </Link>
-          <Link href="/about" className="nav-pop text-slate-100/80 hover:text-neon-cyan font-semibold uppercase tracking-[0.18em]">
+          <Link href="/about" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold uppercase tracking-[0.18em]">
             About
           </Link>
           <details className="relative">
@@ -66,19 +66,19 @@ export const Navigation = () => {
             </summary>
             <div className="absolute left-1/2 top-full mt-2 w-52 -translate-x-1/2 rounded-xl bg-[#0b111a]/90 border border-neon-cyan/30 p-3 text-center shadow-[0_0_28px_rgba(0,212,255,0.3)] backdrop-blur-xl">
               <div className="flex flex-col gap-2 text-[0.72rem]">
-                <Link href="/research" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+                <Link href="/research" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold">
                   Research
                 </Link>
-                <Link href="/engine" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+                <Link href="/engine" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold">
                   Live Trading
                 </Link>
-                <Link href="/insights" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+                <Link href="/insights" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold">
                   Insights
                 </Link>
-                <Link href="/careers" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+                <Link href="/careers" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold">
                   Careers
                 </Link>
-                <Link href="/#contact" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+                <Link href="/#contact" className="nav-pop text-[#AAB6C5] hover:text-neon-cyan font-semibold">
                   Contact
                 </Link>
               </div>
