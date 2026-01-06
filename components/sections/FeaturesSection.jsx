@@ -53,6 +53,9 @@ export const FeaturesSection = () => {
           <p className="text-gray-500 text-sm">
             Every component is production-grade and integrated into a unified system
           </p>
+          <p className="script-text text-[0.8rem] sm:text-[0.95rem] lg:text-[1.275rem] font-bold text-neon-pink/80 mt-4">
+            Regime shifts don&apos;t warn you, our models do ...
+          </p>
         </div>
       </div>
     </section>
