@@ -9,7 +9,7 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
-          <span className="text-xl sm:text-2xl font-semibold tracking-[0.08em] text-[#AAB6C5]">
+          <span className="text-[0.9rem] sm:text-[1.125rem] font-semibold tracking-[0.08em] text-[#AAB6C5]">
             QuantFund AI <span className="text-[#AAB6C5]">x</span>{' '}
             <span className="text-[#AAB6C5]">Nischal</span>
           </span>
@@ -37,7 +37,7 @@ export const Navigation = () => {
           </Link>
           <Link
             href="/#contact"
-            className="rounded-full px-5 py-2.5 text-xs font-semibold tracking-[0.24em] uppercase text-slate-900 bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple shadow-[0_10px_30px_rgba(0,212,255,0.35)] hover:shadow-[0_16px_40px_rgba(139,92,255,0.35)] transition-all"
+            className="rounded-full px-3.5 py-1.5 text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-slate-900 bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple shadow-[0_10px_30px_rgba(0,212,255,0.35)] hover:shadow-[0_16px_40px_rgba(139,92,255,0.35)] transition-all"
           >
             Contact
           </Link>
