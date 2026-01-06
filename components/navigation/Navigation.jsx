@@ -1,39 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-
-const STORAGE_KEY = 'quantfund_visit_count';
-
 export const Navigation = () => {
-  const [visitCount, setVisitCount] = useState(null);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    try {
-      const current = Number.parseInt(window.localStorage.getItem(STORAGE_KEY) || '0', 10);
-      const next = Number.isFinite(current) ? current + 1 : 1;
-      window.localStorage.setItem(STORAGE_KEY, String(next));
-      setVisitCount(next);
-    } catch {
-      setVisitCount(1);
-    }
-  }, []);
-
   return (
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-[#07090d]/95 via-[#0b111a]/85 to-[#07090d]/95 border-b border-white/5 backdrop-blur-2xl overflow-visible shadow-[0_20px_80px_rgba(0,212,255,0.16)]">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/10 opacity-40" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-neon-cyan/60 to-transparent opacity-70" />
-      <div className="hidden sm:block absolute left-2 sm:left-3 top-1/2 -translate-y-1/2">
-        <span className="text-[9px] sm:text-[10px] text-neon-cyan/80 tracking-[0.18em] uppercase">
-          {visitCount ?? '—'} Visits
-        </span>
-      </div>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 md:gap-0">
         {/* Logo */}
         <Link href="/" className="mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
-          <span className="inline-flex h-2.5 w-2.5 rounded-full bg-neon-cyan shadow-[0_0_12px_rgba(78,242,255,0.7)] mr-3" />
-          <span className="text-xl sm:text-2xl font-semibold text-slate-100 tracking-[0.08em]">
+          <span className="text-xl sm:text-2xl font-semibold tracking-[0.16em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-neon-cyan">
             QuantFund AI <span className="text-white">x</span>{' '}
             <span className="text-white">Nischal</span>
           </span>
@@ -41,27 +17,27 @@ export const Navigation = () => {
 
         {/* Menu */}
         <div className="hidden md:flex items-center gap-12">
-          <Link href="/" className="nav-pop text-slate-200/90 hover:text-neon-cyan text-sm font-semibold tracking-[0.08em]">
+          <Link href="/" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
             Home
           </Link>
-          <Link href="/about" className="nav-pop text-slate-200/90 hover:text-neon-cyan text-sm font-semibold tracking-[0.08em]">
+          <Link href="/about" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
             About
           </Link>
-          <Link href="/research" className="nav-pop text-slate-200/90 hover:text-neon-cyan text-sm font-semibold tracking-[0.08em]">
+          <Link href="/research" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
             Research
           </Link>
-          <Link href="/engine" className="nav-pop text-slate-200/90 hover:text-neon-cyan text-sm font-semibold tracking-[0.08em]">
+          <Link href="/engine" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
             Live Trading
           </Link>
-          <Link href="/insights" className="nav-pop text-slate-200/90 hover:text-neon-cyan text-sm font-semibold tracking-[0.08em]">
+          <Link href="/insights" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
             Insights
           </Link>
-          <Link href="/careers" className="nav-pop text-slate-200/90 hover:text-neon-cyan text-sm font-semibold tracking-[0.08em]">
+          <Link href="/careers" className="nav-pop text-slate-100/80 hover:text-neon-cyan text-[0.72rem] font-semibold tracking-[0.22em] uppercase">
             Careers
           </Link>
           <Link
             href="/#contact"
-            className="rounded-full px-5 py-2.5 text-xs font-semibold tracking-[0.24em] uppercase text-slate-900 bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple shadow-[0_10px_30px_rgba(0,212,255,0.35)] hover:shadow-[0_16px_40px_rgba(139,92,255,0.35)] transition-all"
+            className="rounded-full px-5 py-2.5 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-slate-900 bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple shadow-[0_10px_30px_rgba(0,212,255,0.35)] hover:shadow-[0_16px_40px_rgba(139,92,255,0.35)] transition-all"
           >
             Contact
           </Link>
@@ -71,10 +47,10 @@ export const Navigation = () => {
 
       <div className="md:hidden border-t border-dark-border/60 bg-black/20 px-4 pb-3 pt-2">
         <div className="flex items-center justify-center gap-6 text-[0.72rem] tracking-wide">
-          <Link href="/" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+          <Link href="/" className="nav-pop text-slate-100/80 hover:text-neon-cyan font-semibold uppercase tracking-[0.18em]">
             Home
           </Link>
-          <Link href="/about" className="nav-pop text-slate-200/90 hover:text-neon-cyan font-semibold">
+          <Link href="/about" className="nav-pop text-slate-100/80 hover:text-neon-cyan font-semibold uppercase tracking-[0.18em]">
             About
           </Link>
           <details className="relative">
