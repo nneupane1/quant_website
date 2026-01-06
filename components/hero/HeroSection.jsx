@@ -79,13 +79,13 @@ export const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 justify-center mt-4 sm:mt-8 mb-8">
           <button
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-neon-blue/50 transition-all duration-300 transform hover:scale-105"
+            className="px-9 py-4 rounded-full bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple text-[#051015] font-semibold tracking-[0.2em] uppercase text-[0.7rem] shadow-[0_12px_36px_rgba(0,212,255,0.35)] hover:shadow-[0_18px_50px_rgba(139,92,255,0.4)] transition-all duration-300 transform hover:scale-[1.03]"
           >
             Explore Now
           </button>
           <a
             href="/about"
-            className="px-8 py-4 glass neon-border text-neon-blue font-bold rounded-lg hover:bg-neon-blue/10 transition-all duration-300 inline-flex items-center justify-center"
+            className="px-9 py-4 rounded-full border border-neon-cyan/50 text-neon-cyan font-semibold tracking-[0.2em] uppercase text-[0.7rem] bg-white/5 shadow-[0_0_24px_rgba(78,242,255,0.2)] hover:bg-neon-cyan/10 hover:shadow-[0_0_34px_rgba(78,242,255,0.35)] transition-all duration-300 inline-flex items-center justify-center"
           >
             Learn More
           </a>
