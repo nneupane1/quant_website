@@ -18,7 +18,7 @@ export default function About() {
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12 text-center">
-            <div className="w-full max-w-none mx-auto rounded-[48px] overflow-hidden -mt-14 mb-4">
+            <div className="w-full max-w-none mx-auto rounded-[48px] overflow-hidden -mt-14 mb-0">
               <img
                 src="/images/bull_bear1.png"
                 alt="Bull and bear motif"
@@ -26,7 +26,7 @@ export default function About() {
                 style={{ clipPath: 'inset(12% 10% 12% 10% round 48px)' }}
               />
             </div>
-            <div className="relative mb-4 h-4 overflow-hidden">
+            <div className="relative my-4 h-4 overflow-hidden">
               <div className="absolute left-1/2 top-0 h-full w-2/3 -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-neon-blue/60 to-transparent blur-md animate-light-sweep" />
               <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent opacity-70 animate-light-sweep delay-[1.5s]" />
             </div>

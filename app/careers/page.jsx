@@ -16,7 +16,7 @@ export default function Careers() {
         <AmbientBlobs />
         <div className="relative z-10 max-w-5xl mx-auto">
           <div className="mb-12 text-center">
-            <div className="w-[79%] mx-auto rounded-[40px] overflow-hidden -mt-10 mb-4">
+            <div className="w-[79%] mx-auto rounded-[40px] overflow-hidden -mt-10 mb-0">
               <img
                 src="/images/interview.png"
                 alt="Careers at QuantFund AI"
@@ -24,17 +24,17 @@ export default function Careers() {
                 style={{ clipPath: 'inset(2.9% 5.3% 2.3% 5.3% round 220px)' }}
               />
             </div>
-            <div className="relative mb-4 h-4 overflow-hidden">
+            <div className="relative my-4 h-4 overflow-hidden">
               <div className="absolute left-1/2 top-0 h-full w-2/3 -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-neon-blue/60 to-transparent blur-md animate-light-sweep" />
               <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent opacity-70 animate-light-sweep delay-[1.5s]" />
-            </div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 glass neon-border rounded-full text-sm font-medium animate-float-y">
-              <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-              <span className="font-bold text-white">Hiring Opens Soon</span>
             </div>
             <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-6">
               <span className="text-neon-blue">Careers at QuantFund AI</span>
             </h1>
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 glass neon-border rounded-full text-sm font-medium animate-float-y">
+              <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
+              <span className="font-bold text-white">Hiring Opens Soon</span>
+            </div>
             <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               We are building an institutional-grade quantitative research and execution platform.
               When hiring opens, we will be looking for builders who care about rigor, reliability,
