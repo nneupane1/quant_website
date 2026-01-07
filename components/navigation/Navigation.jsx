@@ -8,10 +8,12 @@ export const Navigation = () => {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-neon-cyan/60 to-transparent opacity-70" />
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
-          <span className="text-[0.9rem] sm:text-[1.125rem] font-semibold tracking-[0.08em] text-[#AAB6C5]">
-            QuantFund AI <span className="text-[#AAB6C5]">x</span>{' '}
-            <span className="text-[#AAB6C5]">Nischal</span>
+        <Link href="/" className="group mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
+          <span className="inline-flex animate-logo-drift">
+            <span className="inline-flex text-[0.9rem] sm:text-[1.125rem] font-semibold tracking-[0.08em] text-[#AAB6C5] transition-transform transition-colors duration-300 group-hover:text-neon-blue group-hover:scale-125">
+              QuantFund AI <span className="text-[#AAB6C5] group-hover:text-neon-blue">x</span>{' '}
+              <span className="text-[#AAB6C5] group-hover:text-neon-blue">Nischal</span>
+            </span>
           </span>
         </Link>
 

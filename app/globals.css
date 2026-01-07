@@ -167,6 +167,20 @@ details summary svg {
   animation: lightSweep 3s ease-in-out infinite;
 }
 
+@keyframes logoDrift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.animate-logo-drift {
+  animation: logoDrift 8s ease-in-out infinite;
+}
+
 @keyframes santaFloat {
   0%,
   100% {
