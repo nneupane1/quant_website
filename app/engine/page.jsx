@@ -24,11 +24,11 @@ export default function Engine() {
                 style={{ clipPath: 'inset(12% 10% 12% 10% round 40px)' }}
               />
             </div>
-            <div className="relative mt-6 mb-10 h-4 overflow-hidden">
+            <div className="relative -mt-16 mb-10 h-4 overflow-hidden">
               <div className="absolute left-1/2 top-0 h-full w-2/3 -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-neon-blue/60 to-transparent blur-md animate-light-sweep" />
               <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent opacity-70 animate-light-sweep delay-[1.5s]" />
             </div>
-            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold mb-6">
+            <h1 className="text-[2.55rem] md:text-[3.2rem] font-bold -mt-10 mb-6">
               <span className="text-neon-blue">Live Trading Room</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
