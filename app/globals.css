@@ -173,12 +173,12 @@ details summary svg {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(6px);
+    transform: translateX(10px);
   }
 }
 
 .animate-logo-drift {
-  animation: logoDrift 8s ease-in-out infinite;
+  animation: logoDrift 6s ease-in-out infinite;
 }
 
 @keyframes santaFloat {
