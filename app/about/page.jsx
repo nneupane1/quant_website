@@ -26,7 +26,7 @@ export default function About() {
                 style={{ clipPath: 'inset(12% 10% 12% 10% round 48px)' }}
               />
             </div>
-            <div className="relative mt-6 mb-10 h-4 overflow-hidden">
+            <div className="relative -mt-10 mb-10 h-4 overflow-hidden">
               <div className="absolute left-1/2 top-0 h-full w-2/3 -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-neon-blue/60 to-transparent blur-md animate-light-sweep" />
               <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent opacity-70 animate-light-sweep delay-[1.5s]" />
             </div>
