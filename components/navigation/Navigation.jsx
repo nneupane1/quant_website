@@ -11,7 +11,7 @@ export const Navigation = () => {
         <Link href="/" className="group mx-auto md:mx-0 md:-ml-2 flex items-center hover:opacity-90 transition">
           <span className="inline-flex animate-logo-drift">
             <span className="inline-flex text-[0.9rem] sm:text-[1.125rem] font-semibold tracking-[0.08em] text-[#AAB6C5] transition-transform transition-colors duration-300 group-hover:text-neon-blue group-hover:scale-125 group-hover:drop-shadow-[0_0_14px_rgba(78,242,255,0.55)]">
-              QuantFund AI<span className="text-[#AAB6C5] group-hover:text-neon-blue">x</span>
+              QuantFund AI <span className="text-[#AAB6C5] group-hover:text-neon-blue">x</span>{' '}
               <span className="text-[#AAB6C5] group-hover:text-neon-blue">Nischal</span>
             </span>
           </span>

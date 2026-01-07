@@ -178,7 +178,7 @@ details summary svg {
 }
 
 .animate-logo-drift {
-  animation: logoDrift 6s ease-in-out infinite;
+  animation: logoDrift 7.5s ease-in-out infinite;
 }
 
 @keyframes santaFloat {
