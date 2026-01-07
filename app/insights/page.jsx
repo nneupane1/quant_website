@@ -77,7 +77,7 @@ export default function Insights() {
                 'Audit-ready signal lineage for every research narrative',
               ].map((item, i) => (
                 <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
-                  <span className="text-neon-blue">✓</span>
+                  <span className="text-neon-green">✓</span>
                   {item}
                 </div>
               ))}
@@ -104,7 +104,7 @@ export default function Insights() {
                 'Audit-Ready Dashboards',
               ].map((item, i) => (
                 <div key={i} className="px-4 py-3 glass neon-border rounded-lg text-sm text-neon-blue flex items-center gap-2">
-                  <span className="text-neon-blue">✓</span>
+                  <span className="text-neon-green">✓</span>
                   {item}
                 </div>
               ))}
