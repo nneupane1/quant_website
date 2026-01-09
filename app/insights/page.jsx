@@ -33,7 +33,8 @@ export default function Insights() {
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
               A research-grade intelligence layer that turns market microstructure into actionable
-              narratives, regime diagnostics, and execution-ready context.
+              narratives, regime diagnostics, and execution-ready context grounded in{' '}
+              <span className="text-neon-pink font-semibold">Physics</span>.
             </p>
           </div>
 
@@ -41,18 +42,31 @@ export default function Insights() {
             {[
               {
                 title: 'Regime Briefings',
-                description:
-                  'Daily classification of volatility regimes, liquidity gradients, and structural bias shifts across assets.',
+                description: (
+                  <>
+                    Daily classification of volatility regimes, liquidity gradients, and structural bias shifts across
+                    assets with the interpretive rigor of{' '}
+                    <span className="text-neon-pink font-semibold">Physics</span>.
+                  </>
+                ),
               },
               {
                 title: 'Signal Intelligence',
-                description:
-                  'Confluence-ranked opportunities with calibrated probability scores and reasoning vectors.',
+                description: (
+                  <>
+                    Confluence-ranked opportunities with calibrated probability scores and reasoning vectors anchored
+                    in <span className="text-neon-pink font-semibold">Physics</span>.
+                  </>
+                ),
               },
               {
                 title: 'Risk Radar',
-                description:
-                  'Macro guardrail checks, stress overlays, and execution readiness diagnostics.',
+                description: (
+                  <>
+                    Macro guardrail checks, stress overlays, and execution readiness diagnostics shaped by{' '}
+                    <span className="text-neon-pink font-semibold">Physics</span>.
+                  </>
+                ),
               },
             ].map((item, i) => (
               <div key={i} className="glass neon-border rounded-xl p-6">
@@ -65,7 +79,18 @@ export default function Insights() {
           <section className="glass neon-border rounded-xl p-8 mb-16">
             <h2 className="text-3xl font-bold mb-6 text-neon-pink">What You See in Insights</h2>
             <p className="text-white leading-relaxed mb-6">
-              The insights layer exposes the internal reasoning of the trading engine with the granularity of a research workstation and the clarity of an execution desk. Every signal surfaces its structural bias probabilities, retest classifications, wick-flow dominance, and liquidity-distance diagnostics, allowing you to see exactly how the underlying market mechanics shaped the setup. Momentum derivatives, VWAP curvature, volatility guards, and macro filters contextualize the market state, while risk-adjusted expectancy scores quantify the edge under current regime conditions. Each alert is backed by a fully traceable signal lineage—feature states, structural labels, model outputs, and calibration metadata—giving researchers a complete narrative of why the system favors a trade and whether execution conditions are met. The result is a transparency layer where confluence becomes visible, intuition becomes measurable, and every decision is supported by an auditable empirical footprint.
+              The insights layer exposes the internal reasoning of the trading engine with the granularity of a research
+              workstation and the clarity of an execution desk. Every signal surfaces its structural bias probabilities,
+              retest classifications, wick-flow dominance, and liquidity-distance diagnostics, allowing you to see
+              exactly how the underlying market mechanics shaped the setup through the lens of{' '}
+              <span className="text-neon-pink font-semibold">Physics</span>. Momentum derivatives, VWAP curvature,
+              volatility guards, and macro filters contextualize the market state, while risk-adjusted expectancy scores
+              quantify the edge under current regime conditions. Each alert is backed by a fully traceable signal
+              lineage—feature states, structural labels, model outputs, and calibration metadata—giving researchers a
+              complete narrative of why the system favors a trade and whether execution conditions are met. The result is
+              a transparency layer where confluence becomes visible, intuition becomes measurable, and every decision is
+              supported by an auditable empirical footprint rooted in{' '}
+              <span className="text-neon-pink font-semibold">Physics</span>.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
@@ -87,11 +112,32 @@ export default function Insights() {
           <section className="glass neon-border-pink rounded-xl p-8">
             <h2 className="text-3xl font-bold mb-6 text-neon-pink">Institutional Context, Human Clarity</h2>
             <div className="space-y-4 text-white">
+              <div className="glass neon-border rounded-lg p-4">
+                <h3 className="text-lg font-bold text-neon-pink mb-2">Physics-Led Clarity</h3>
+                <p>
+                  Every interpretation is grounded in{' '}
+                  <span className="text-neon-pink font-semibold">Physics</span>, translating microstructure mechanics
+                  into explainable decision physics that a human can trust at execution speed.
+                </p>
+              </div>
               <p>
-                Insights is not a reporting widget — it is the system’s reasoning interface, translating raw microstructure computations into explanations that a human can act on with conviction. Each signal is decomposed into its causal drivers: which structural shifts triggered the bias, which volatility conditions shaped the expectancy, which liquidity gradients validated the setup, and how the execution should be staged across risk boundaries. Instead of opaque alerts, you see the underlying physics of the trade — displacement mechanics, retest integrity, wick-flow dominance, regime likelihoods, and probability-calibrated confluence vectors.
+                Insights is not a reporting widget — it is the system’s reasoning interface, translating raw
+                microstructure computations into explanations that a human can act on with conviction. Each signal is
+                decomposed into its causal drivers: which structural shifts triggered the bias, which volatility
+                conditions shaped the expectancy, which liquidity gradients validated the setup, and how the execution
+                should be staged across risk boundaries. Instead of opaque alerts, you see the underlying{' '}
+                <span className="text-neon-pink font-semibold">Physics</span> of the trade — displacement mechanics,
+                retest integrity, wick-flow dominance, regime likelihoods, and probability-calibrated confluence
+                vectors.
               </p>
               <p>
-                Behind the scenes, every insight is rendered from the same deterministic feature graph used in research, backtesting, and live execution. That means the logic is fully reproducible, drift-free, and audit-ready — the explanation you see is the exact logic the machine used. This continuity creates institutional clarity: decisions are traceable, parameter influences are explicit, and the human operator gains complete situational awareness in fast, adversarial markets. Insights becomes the bridge between quantitative rigor and human judgment.
+                Behind the scenes, every insight is rendered from the same deterministic feature graph used in
+                research, backtesting, and live execution. That means the logic is fully reproducible, drift-free, and
+                audit-ready — the explanation you see is the exact logic the machine used. This continuity creates
+                institutional clarity: decisions are traceable, parameter influences are explicit, and the human
+                operator gains complete situational awareness in fast, adversarial markets, with{' '}
+                <span className="text-neon-pink font-semibold">Physics</span> as the interpretive backbone. Insights
+                becomes the bridge between quantitative rigor and human judgment.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
