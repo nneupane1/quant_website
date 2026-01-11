@@ -4,7 +4,7 @@ const cards = [
   {
     title: 'Market Structure & SMC',
     subtitle: 'Swing highs/lows, BOS, CHoCH, OB',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'candles',
     glow: 'from-neon-green/25 via-neon-blue/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -12,7 +12,7 @@ const cards = [
   {
     title: 'Machine Learning Engine',
     subtitle: 'Model fusion, feature ranking, calibration',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'network',
     glow: 'from-neon-cyan/25 via-neon-purple/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -20,7 +20,7 @@ const cards = [
   {
     title: 'Live Signal Scanner',
     subtitle: 'Real-time confluence and cross-asset alerts',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'scanner',
     glow: 'from-neon-blue/25 via-neon-cyan/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -28,7 +28,7 @@ const cards = [
   {
     title: 'Indicator Heatmap',
     subtitle: 'EMA, MACD, ATR, VWAP overlays',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'heatmap',
     glow: 'from-neon-pink/20 via-neon-blue/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -36,7 +36,7 @@ const cards = [
   {
     title: 'Monte Carlo Simulator',
     subtitle: 'Equity forecasts and drawdown stress tests',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'montecarlo',
     glow: 'from-neon-purple/20 via-neon-cyan/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -44,7 +44,7 @@ const cards = [
   {
     title: 'HMM Regime Detector',
     subtitle: 'Probabilistic trend and state transitions',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'hmm',
     glow: 'from-neon-blue/25 via-neon-green/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -52,7 +52,7 @@ const cards = [
   {
     title: 'Exposure & Capital Tracker',
     subtitle: 'VaR allocation and risk guardrails',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'exposure',
     glow: 'from-neon-purple/25 via-neon-pink/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -60,7 +60,7 @@ const cards = [
   {
     title: 'ML Feature Insights',
     subtitle: 'Feature importance and drift monitoring',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'bars',
     glow: 'from-neon-cyan/25 via-neon-blue/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -68,7 +68,7 @@ const cards = [
   {
     title: 'Trader Psychology & KPIs',
     subtitle: 'Behavioral tracking and performance score',
-    cta: 'Open Dashboard ->',
+    cta: 'Open Dashboard',
     visual: 'psychology',
     glow: 'from-neon-pink/25 via-neon-purple/10 to-transparent',
     tone: 'text-neon-cyan',
@@ -77,12 +77,13 @@ const cards = [
 
 const VisualFrame = ({ children, glow }) => (
   <div
-    className={`relative h-32 rounded-lg overflow-hidden border border-white/10 bg-gradient-to-br ${glow}`}
+    className={`relative h-36 rounded-xl overflow-hidden border border-white/10 bg-gradient-to-br ${glow}`}
   >
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(78,242,255,0.2),transparent_55%)]" />
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_85%,rgba(255,79,216,0.16),transparent_60%)]" />
+    <div className="absolute inset-0 grid-veil opacity-40" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(78,242,255,0.22),transparent_55%)] animate-halo-pulse" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_85%,rgba(255,79,216,0.2),transparent_60%)]" />
     <div className="absolute -left-1/3 top-0 h-full w-1/2 bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-40 animate-scan-sweep" />
-    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.08),transparent_30%,transparent_70%,rgba(255,255,255,0.08))]" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.12),transparent_30%,transparent_70%,rgba(255,255,255,0.08))]" />
     <div className="relative z-10 h-full w-full p-4">{children}</div>
   </div>
 );
@@ -249,7 +250,7 @@ const renderVisual = (type) => {
 
 export const CinematicCapabilities = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
           <p className="text-xs uppercase tracking-[0.35em] text-neon-cyan/70 mb-3">
@@ -268,17 +269,22 @@ export const CinematicCapabilities = () => {
           {cards.map((card, index) => (
             <div
               key={card.title}
-              className="group relative glass neon-border rounded-2xl p-5 overflow-hidden hover:border-neon-cyan transition-all duration-300"
+              className="group relative glass neon-border rounded-2xl p-6 min-h-[360px] flex flex-col gap-4 overflow-hidden hover:border-neon-cyan transition-all duration-300"
               style={{ animation: `fadeIn 0.5s ease-out ${index * 0.08}s both` }}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/0 to-neon-pink/0 group-hover:from-neon-blue/10 group-hover:to-neon-pink/10 transition-all duration-300" />
-              <div className="relative z-10 space-y-4">
+              <div className="relative z-10 flex flex-col gap-4 h-full">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.32em] text-gray-500">
+                  <span>Module</span>
+                  <span className="text-neon-blue/70">QF-AI</span>
+                </div>
                 <VisualFrame glow={card.glow}>{renderVisual(card.visual)}</VisualFrame>
-                <div>
+                <div className="flex-1">
                   <h3 className={`text-lg font-bold mb-2 ${card.tone}`}>{card.title}</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed mb-3">{card.subtitle}</p>
-                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-neon-blue">
+                  <p className="text-xs text-gray-400 leading-relaxed mb-4">{card.subtitle}</p>
+                  <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-neon-blue group-hover:text-neon-cyan transition-colors">
                     {card.cta}
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                   </span>
                 </div>
               </div>

@@ -202,6 +202,28 @@ details summary svg {
   animation: scanSweep 7s ease-in-out infinite;
 }
 
+@keyframes haloPulse {
+  0%,
+  100% {
+    opacity: 0.18;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.03);
+  }
+}
+
+.animate-halo-pulse {
+  animation: haloPulse 9s ease-in-out infinite;
+}
+
+.grid-veil {
+  background-image: linear-gradient(rgba(78, 242, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(78, 242, 255, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
 @keyframes santaFloat {
   0%,
   100% {
