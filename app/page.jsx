@@ -2,8 +2,7 @@ import { Navigation } from '@/components/navigation/Navigation';
 import { HeroSection } from '@/components/hero/HeroSection';
 import { FeaturesSection } from '@/components/sections/FeaturesSection';
 import { PerformanceDashboard } from '@/components/sections/PerformanceDashboard';
-import { DataVisualization } from '@/components/sections/DataVisualization';
-import { RiskDashboard } from '@/components/sections/RiskDashboard';
+import { CinematicCapabilities } from '@/components/sections/CinematicCapabilities';
 import { TeamSection } from '@/components/sections/TeamSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { ContactForm } from '@/components/sections/ContactForm';
@@ -27,8 +26,7 @@ export default function Home() {
         <AmbientBlobs />
         <div className="relative z-10">
           <PerformanceDashboard />
-          <DataVisualization />
-          <RiskDashboard />
+          <CinematicCapabilities />
           <TeamSection />
           <CTASection />
           <ContactForm />
